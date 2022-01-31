@@ -10,4 +10,4 @@ app: icons
 	podman run -it -v $(shell pwd):/project -v /tmp/gradlecache:"/root/.gradle" mingc/android-build-box bash -c 'cd /project; ./gradlew build'
 
 publish: app
-	mv app/builds/outputs/apk/release/app-release-unsigned.apk /var/lib/fdroid/repo/vanilla-plus_$(shell git rev-parse HEAD).apk
+	mv app/build/outputs/apk/release/app-release-unsigned.apk /var/lib/fdroid/repo/vanilla-plus_$(shell git rev-parse HEAD).apk
