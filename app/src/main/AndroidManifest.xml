@@ -22,9 +22,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-	package="ch.blinkenlights.android.vanilla"
-	android:versionName="1.1.0"
-	android:versionCode="11001"
+	package="space.rcmd.android.vanillaplus"
+	android:versionName="1.1.1"
+	android:versionCode="11101"
 	android:installLocation="auto">
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -38,7 +38,7 @@ THE SOFTWARE.
 	<!-- Allow us to query plugins -->
 	<queries>
 		<intent>
-			<action android:name="ch.blinkenlights.android.vanilla.action.REQUEST_PLUGIN_PARAMS" />
+			<action android:name="space.rcmd.android.vanillaplus.action.REQUEST_PLUGIN_PARAMS" />
 		</intent>
 	</queries>
 
@@ -55,7 +55,7 @@ THE SOFTWARE.
 
 		<provider
 			android:name="androidx.core.content.FileProvider"
-			android:authorities="ch.blinkenlights.android.vanilla.fileprovider"
+			android:authorities="space.rcmd.android.vanillaplus.fileprovider"
 			android:exported="false"
 			android:grantUriPermissions="true">
 			<meta-data
@@ -158,11 +158,11 @@ THE SOFTWARE.
 		</receiver>
 		<service android:name="PlaybackService">
 			<intent-filter>
-				<action android:name="ch.blinkenlights.android.vanilla.action.PLAY" />
-				<action android:name="ch.blinkenlights.android.vanilla.action.PAUSE" />
-				<action android:name="ch.blinkenlights.android.vanilla.action.TOGGLE_PLAYBACK" />
-				<action android:name="ch.blinkenlights.android.vanilla.action.NEXT_SONG" />
-				<action android:name="ch.blinkenlights.android.vanilla.action.PREVIOUS_SONG" />
+				<action android:name="space.rcmd.android.vanillaplus.action.PLAY" />
+				<action android:name="space.rcmd.android.vanillaplus.action.PAUSE" />
+				<action android:name="space.rcmd.android.vanillaplus.action.TOGGLE_PLAYBACK" />
+				<action android:name="space.rcmd.android.vanillaplus.action.NEXT_SONG" />
+				<action android:name="space.rcmd.android.vanillaplus.action.PREVIOUS_SONG" />
 			</intent-filter>
 		</service>
 

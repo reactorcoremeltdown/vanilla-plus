@@ -39,7 +39,7 @@ public class VanillaTabLayout extends SlidingTabLayout {
 
 	public VanillaTabLayout(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-		setSelectedIndicatorColors(context.getResources().getColor(ch.blinkenlights.android.vanilla.R.color.tabs_active_indicator));
+		setSelectedIndicatorColors(context.getResources().getColor(space.rcmd.android.vanillaplus.R.color.tabs_active_indicator));
 		setDistributeEvenly(false);
 	}
 
@@ -49,8 +49,8 @@ public class VanillaTabLayout extends SlidingTabLayout {
 	@Override
 	protected TextView createDefaultTabView(Context context) {
 		TextView view = super.createDefaultTabView(context);
-		view.setTextColor(getResources().getColorStateList(ch.blinkenlights.android.vanilla.R.color.tab_text_selector));
-		view.setBackgroundResource(ch.blinkenlights.android.vanilla.R.drawable.unbound_ripple_light);
+		view.setTextColor(getResources().getColorStateList(space.rcmd.android.vanillaplus.R.color.tab_text_selector));
+		view.setBackgroundResource(space.rcmd.android.vanillaplus.R.drawable.unbound_ripple_light);
 		view.setMaxLines(1);
 		view.setEllipsize(TextUtils.TruncateAt.END);
 		view.setTextSize(14);

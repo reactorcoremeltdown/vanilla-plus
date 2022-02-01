@@ -9,7 +9,7 @@ android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
     defaultConfig {
-        applicationId "ch.blinkenlights.android.vanilla"
+        applicationId "space.rcmd.android.vanillaplus"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
     }

@@ -9,9 +9,9 @@
 		android:shortcutLongLabel="@string/play"
 		android:shortcutShortLabel="@string/play">
 		<intent
-			android:action="ch.blinkenlights.android.vanilla.action.TOGGLE_PLAYBACK"
-			android:targetClass="ch.blinkenlights.android.vanilla.ShortcutPseudoActivity"
-			android:targetPackage="ch.blinkenlights.android.vanilla"/>
+			android:action="space.rcmd.android.vanillaplus.action.TOGGLE_PLAYBACK"
+			android:targetClass="space.rcmd.android.vanillaplus.ShortcutPseudoActivity"
+			android:targetPackage="space.rcmd.android.vanillaplus"/>
 	</shortcut>
 
 	<shortcut
@@ -22,9 +22,9 @@
 		android:shortcutLongLabel="@string/random"
 		android:shortcutShortLabel="@string/random">
 		<intent
-			android:action="ch.blinkenlights.android.vanilla.action.RANDOM_MIX_AUTOPLAY"
-			android:targetClass="ch.blinkenlights.android.vanilla.ShortcutPseudoActivity"
-			android:targetPackage="ch.blinkenlights.android.vanilla"/>
+			android:action="space.rcmd.android.vanillaplus.action.RANDOM_MIX_AUTOPLAY"
+			android:targetClass="space.rcmd.android.vanillaplus.ShortcutPseudoActivity"
+			android:targetPackage="space.rcmd.android.vanillaplus"/>
 	</shortcut>
 
 </shortcuts> 
