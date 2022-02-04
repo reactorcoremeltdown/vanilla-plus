@@ -24,7 +24,7 @@ THE SOFTWARE.
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
 	package="space.rcmd.android.vanillaplus"
 	android:versionName="1.1.1"
-	android:versionCode="11105"
+	android:versionCode="11106"
 	android:installLocation="auto">
 	<uses-permission android:name="android.permission.WAKE_LOCK" />
 	<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -93,7 +93,7 @@ THE SOFTWARE.
 			android:launchMode="singleInstance" />
 		<receiver
 			android:name=".OneCellWidget"
-			android:label="Vanilla Music 1x1">
+			android:label="Vanilla Plus 1x1">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
@@ -103,7 +103,7 @@ THE SOFTWARE.
 		</receiver>
 		<receiver
 			android:name=".FourLongWidget"
-			android:label="Vanilla Music 4x1 A">
+			android:label="Vanilla Plus 4x1 A">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
@@ -113,7 +113,7 @@ THE SOFTWARE.
 		</receiver>
 		<receiver
 			android:name=".FourWhiteWidget"
-			android:label="Vanilla Music 4x1 White">
+			android:label="Vanilla Plus 4x1 White">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
@@ -123,7 +123,7 @@ THE SOFTWARE.
 		</receiver>
 		<receiver
 			android:name=".WidgetE"
-			android:label="Vanilla Music 4x1 B">
+			android:label="Vanilla Plus 4x1 B">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
@@ -133,7 +133,7 @@ THE SOFTWARE.
 		</receiver>
 		<receiver
 			android:name=".FourSquareWidget"
-			android:label="Vanilla Music 2x2 A">
+			android:label="Vanilla Plus 2x2 A">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
@@ -143,7 +143,7 @@ THE SOFTWARE.
 		</receiver>
 		<receiver
 			android:name=".WidgetD"
-			android:label="Vanilla Music 2x2 B">
+			android:label="Vanilla Plus 2x2 B">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
