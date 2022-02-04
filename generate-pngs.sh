@@ -19,7 +19,7 @@ gen() {
 	name=`basename "$path" .svgz`
 	png="app/src/main/res/$type-$res/$name.png"
 	if [ "$path" -nt "$png" -o ! -e "$png" ]; then
-		dbus-run-session inkscape --export-area-page --export-dpi=$dpi --export-filename="$png" --export-type="png" $path
+		dbus-run-session inkscape --export-area-page --export-dpi=$dpi --export-filename="$png" --export-type="png" $path 2>/dev/null
 		echo
 	fi
 }
