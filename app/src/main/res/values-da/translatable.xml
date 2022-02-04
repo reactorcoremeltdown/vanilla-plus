@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Numre uden genspilning forstærkning mærke</string>
   <string name="replaygain_untagged_debump_summary">Formindske lydstyrke med</string>
   <string name="replaygain_preamp_note_title">Bemærk</string>
-  <string name="replaygain_preamp_note_content">Android tillader ikke Vanilla Music at hæve lydstyrken til &gt;100%. Indstille forforstærker for høj kan forårsage problemer hvis der lyttes til  \'stille\' musik. \n\nAnbefalede værdier er:\n-&gt; -3dB for stille/klassisk musik\n-&gt; +3dB for efter-2000 optagelser</string>
+  <string name="replaygain_preamp_note_content">Android tillader ikke Vanilla Plus at hæve lydstyrken til &gt;100%. Indstille forforstærker for høj kan forårsage problemer hvis der lyttes til  \'stille\' musik. \n\nAnbefalede værdier er:\n-&gt; -3dB for stille/klassisk musik\n-&gt; +3dB for efter-2000 optagelser</string>
   <string name="readahead">Aktivere indlæse forud</string>
   <string name="readahead_summary">Indlæs forud nuværende afpillede nummer. Denne indstilling kan løse \'lyd udfald\' problemer. (forårsaget af langsomt SD kort)</string>
   <string name="equalizer">Equalizer</string>
@@ -197,7 +197,7 @@
   <string name="disable_lockscreen_title">Deaktivere låseskærm</string>
   <string name="disable_lockscreen_summary">Forhindre låseskærm i at aktivere når den er på biblioteket eller afspilning skærm</string>
   <string name="keep_screen_on_title">Hold skærm tændt</string>
-  <string name="keep_screen_on_summary">Hold skærm  (og enhed) vågen når Vanilla Music er synlig</string>
+  <string name="keep_screen_on_summary">Hold skærm  (og enhed) vågen når Vanilla Plus er synlig</string>
   <string name="use_idle_timeout_title">Aktivere tomgang tidsudløb</string>
   <string name="use_idle_timeout_summary">Når aktiv, afspilning vil stoppe efter given periode af inaktivitet</string>
   <string name="idle_timeout_title">Tomgangs tidsudløb</string>
@@ -290,7 +290,7 @@
   <string name="playlist_sync_folder_summary">Mappe for afspille liste synkronisering</string>
   <string name="playlist_export_relative_paths_title">Eksportere med relative stier</string>
   <string name="playlist_export_relative_paths_summary">Refenrece fil stier i forhold til afspilningsliste</string>
-  <string name="permission_request_summary">Vanilla Music behøver læse tilladelse for at vise musik bibliotek</string>
+  <string name="permission_request_summary">Vanilla Plus behøver læse tilladelse for at vise musik bibliotek</string>
   <string name="reverse_sort">Omvendt sortering</string>
   <string name="share">Dele...</string>
   <string name="share_failed">Fildeling mislykket</string>

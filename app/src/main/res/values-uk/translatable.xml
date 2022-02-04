@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">Добре</string>
   <string name="cancel">Скасувати</string>
   <!--Playback Activity (main screen)-->
@@ -183,7 +183,7 @@
   <string name="replaygain_untagged_debump_title">Композиції не відмічені для вирівнювання</string>
   <string name="replaygain_untagged_debump_summary">Зменшити гучність на</string>
   <string name="replaygain_preamp_note_title">Примітка</string>
-  <string name="replaygain_preamp_note_content">Android не дозволяє Vanilla Music збільшувати гучність понад 100%. Встановлення великих значень підсилення звуку може спричинити проблеми з відтворенням тихої музики. \n\nРекомендовані значення:\n-&gt; -3dB для спокійної/класичної музики\n-&gt; +3dB для записів 2000-х.</string>
+  <string name="replaygain_preamp_note_content">Android не дозволяє Vanilla Plus збільшувати гучність понад 100%. Встановлення великих значень підсилення звуку може спричинити проблеми з відтворенням тихої музики. \n\nРекомендовані значення:\n-&gt; -3dB для спокійної/класичної музики\n-&gt; +3dB для записів 2000-х.</string>
   <string name="readahead">Увімкнути зчитування заздалегідь.</string>
   <string name="readahead_summary">Заздалегідь зчитує відтворювану композицію в пам\'ять. Ця функція може вирішити проблеми з пропаданням звуку. (спричинені повільною SD карткою)</string>
   <string name="equalizer">Еквалайзер</string>
@@ -213,7 +213,7 @@
   <string name="disable_lockscreen_title">Вимкнути блокування екрану</string>
   <string name="disable_lockscreen_summary">Не допускати блокування екрану коли відкрито бібліотеку або екран відтворення.</string>
   <string name="keep_screen_on_title">Тримати екран увімкненим</string>
-  <string name="keep_screen_on_summary">Екран не буде гаснути поки Vanilla Music не буде згорнуто або закрито</string>
+  <string name="keep_screen_on_summary">Екран не буде гаснути поки Vanilla Plus не буде згорнуто або закрито</string>
   <string name="use_idle_timeout_title">Увімкнути таймер простою</string>
   <string name="use_idle_timeout_summary">Якщо увімкнуто то відтворення буде зупинено після заданого часу неактивності</string>
   <string name="idle_timeout_title">Час простою</string>
@@ -308,7 +308,7 @@
   <string name="playlist_sync_folder_summary">Тека для синхронізації списків відтворення</string>
   <string name="playlist_export_relative_paths_title">Експортувати відносні шляхи</string>
   <string name="playlist_export_relative_paths_summary">Шляхи до файлів будуть експортовані відносно розташування списку відтворення</string>
-  <string name="permission_request_summary">Vanilla Music потребує дозволу на читання щоб відобразити вашу музичну бібліотеку</string>
+  <string name="permission_request_summary">Vanilla Plus потребує дозволу на читання щоб відобразити вашу музичну бібліотеку</string>
   <string name="reverse_sort">Впорядкувати в зворотньому напрямку</string>
   <string name="share">Поділитися...</string>
   <string name="share_failed">Не вдалося поділитися файлом</string>

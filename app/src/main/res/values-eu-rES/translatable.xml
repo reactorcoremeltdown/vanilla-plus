@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">Ezeztatu</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">ReplayGain etiketarik gabeko abestiak</string>
   <string name="replaygain_untagged_debump_summary">Bolumena murriztu honen arabera:</string>
   <string name="replaygain_preamp_note_title">Oharra</string>
-  <string name="replaygain_preamp_note_content">Androidek ez dio uzten Vanilla Music-i bolumena &gt;100% era igotzea. Aurre-anplifikadorea balio altuan ezartzeak arazoak sor ditzake musika \"lasaia\" entzuten ari bazara. Aurre-anplifikadorea balio altuan ezartzeak arazoak sor ditzake musika \"lasaia\" entzuten ari bazara. \n\nGomendatutako balioak hauek dira: \n-&gt; -3db musika klasiko/baketsuarentzat\n-&gt; +3dB 2000 ondorengo grabazioentzat</string>
+  <string name="replaygain_preamp_note_content">Androidek ez dio uzten Vanilla Plus-i bolumena &gt;100% era igotzea. Aurre-anplifikadorea balio altuan ezartzeak arazoak sor ditzake musika \"lasaia\" entzuten ari bazara. Aurre-anplifikadorea balio altuan ezartzeak arazoak sor ditzake musika \"lasaia\" entzuten ari bazara. \n\nGomendatutako balioak hauek dira: \n-&gt; -3db musika klasiko/baketsuarentzat\n-&gt; +3dB 2000 ondorengo grabazioentzat</string>
   <string name="readahead">Irakurketa-katxea gaitu</string>
   <string name="readahead_summary">Irakurri aldez aurretik erreproduzitzen ari den pista. Aukera horrek \'mozketa\' arazoak konpon ditzake (SD txartel motel batek eragindakoak).</string>
   <string name="equalizer">Ekualizadorea</string>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">Labi</string>
   <string name="cancel">Atcelt</string>
   <!--Playback Activity (main screen)-->
@@ -206,7 +206,7 @@
   <string name="disable_lockscreen_title">Atslēgt slēgekrānu</string>
   <string name="disable_lockscreen_summary">Novērst slēgekrāna aktivizēšanos bibliotēkas vai atskaņošanas ekrānā</string>
   <string name="keep_screen_on_title">Paturēt ekrānu ieslēgtu</string>
-  <string name="keep_screen_on_summary">Ja Vanilla Music ir redzams, paturēt ekrānu (un ierīci) nomodā</string>
+  <string name="keep_screen_on_summary">Ja Vanilla Plus ir redzams, paturēt ekrānu (un ierīci) nomodā</string>
   <string name="use_idle_timeout_title">Ieslēgt dīkstāves noildzi</string>
   <string name="use_idle_timeout_summary">Kad aktīva, atskaņošana tiks apturēta pēc norādītā neaktivitātes perioda</string>
   <string name="idle_timeout_title">Dīkstāves noildze</string>
@@ -299,7 +299,7 @@
   <string name="playlist_sync_folder_summary">Mape, kuru izmantot repertuāra sinhronizācijai</string>
   <string name="playlist_export_relative_paths_title">Eksportēt, izmantojot relatīvos ceļus</string>
   <string name="playlist_export_relative_paths_summary">Failu ceļus norādīt relatīvi repertuāram</string>
-  <string name="permission_request_summary">Vanilla Music lasīšanas atļauja vajadzīga, lai parādītu jūsu mūzikas bibliotēku</string>
+  <string name="permission_request_summary">Vanilla Plus lasīšanas atļauja vajadzīga, lai parādītu jūsu mūzikas bibliotēku</string>
   <string name="reverse_sort">Apgrieztā kārtošana</string>
   <string name="share">Dalīties..</string>
   <string name="share_failed">Neizdevās kopīgot failu</string>

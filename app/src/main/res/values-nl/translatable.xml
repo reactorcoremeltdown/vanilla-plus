@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">Oké</string>
   <string name="cancel">Annuleer</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Nummers zonder ReplayGain-tag</string>
   <string name="replaygain_untagged_debump_summary">Verminder volume met</string>
   <string name="replaygain_preamp_note_title">Let op</string>
-  <string name="replaygain_preamp_note_content">Android staat Vanilla Music niet toe het volume tot meer dan 100% te verhogen. Het instellen van de Pre-amp op een hoge waarde kan problemen veroorzaken bij het luisteren van \'stille\' muziek. \n\nAanbevolen waarden zijn:\n-&gt; -3dB voor stille/klassieke muziek\n-&gt; +3dB voor opnamen van na 2000</string>
+  <string name="replaygain_preamp_note_content">Android staat Vanilla Plus niet toe het volume tot meer dan 100% te verhogen. Het instellen van de Pre-amp op een hoge waarde kan problemen veroorzaken bij het luisteren van \'stille\' muziek. \n\nAanbevolen waarden zijn:\n-&gt; -3dB voor stille/klassieke muziek\n-&gt; +3dB voor opnamen van na 2000</string>
   <string name="readahead">Zet vooruitlezen aan</string>
   <string name="readahead_summary">Nummer dat nu afgespeeld wordt, vooruitlezen. Deze optie kan problemen oplossen met wegvallend geluid (veroorzaakt door een trage SD-kaart)</string>
   <string name="equalizer">Equalizer</string>
@@ -197,7 +197,7 @@
   <string name="disable_lockscreen_title">Zet vergrendelscherm uit</string>
   <string name="disable_lockscreen_summary">Voorkomt dat het vergrendelscherm geactiveerd wordt als de verzameling of het afspeelscherm getoond wordt</string>
   <string name="keep_screen_on_title">Houd scherm aan</string>
-  <string name="keep_screen_on_summary">Voorkom slaapstand van scherm (en toestel) zolang Vanilla Music zichtbaar is</string>
+  <string name="keep_screen_on_summary">Voorkom slaapstand van scherm (en toestel) zolang Vanilla Plus zichtbaar is</string>
   <string name="use_idle_timeout_title">Time-out bij geen activiteit aangezet</string>
   <string name="use_idle_timeout_summary">Als dit wordt ingeschakeld, dan zal het afspelen stoppen na de ingestelde periode van inactiviteit</string>
   <string name="idle_timeout_title">Time-out bij inactiviteit</string>
@@ -290,7 +290,7 @@
   <string name="playlist_sync_folder_summary">Te gebruiken map voor synchroniseren van afspeellijst</string>
   <string name="playlist_export_relative_paths_title">Exporteer naar relatieve paden</string>
   <string name="playlist_export_relative_paths_summary">Refereer bestandspaden relatief t.o.v. de playlist</string>
-  <string name="permission_request_summary">Vanilla Music moet worden gemachtigd om je muziekverzameling te tonen</string>
+  <string name="permission_request_summary">Vanilla Plus moet worden gemachtigd om je muziekverzameling te tonen</string>
   <string name="reverse_sort">Draai sorteervolgorde om</string>
   <string name="share">Deel...</string>
   <string name="share_failed">Kan bestand niet delen</string>

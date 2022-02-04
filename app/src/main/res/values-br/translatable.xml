@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">Mat eo</string>
   <string name="cancel">Nullañ</string>
   <!--Playback Activity (main screen)-->
@@ -191,7 +191,7 @@
   <string name="replaygain_untagged_debump_title">Tonioù hep an tikedenn ReplayGain</string>
   <string name="replaygain_untagged_debump_summary">Izelaat an ampled eus</string>
   <string name="replaygain_preamp_note_title">Evezhiadenn</string>
-  <string name="replaygain_preamp_note_content">Android na aotre ket Vanilla Music da greskiñ an ampled eus 100%. Lakaat ar ragampled d\'un talvoud uhel a c\'hall degas kudennoù ma selaouit ouzh sonerezh \'sioul\'. \n\¬AN talvoudoù aliet a zo:\n-&gt; -3dB evit sonerezh sioul/klasel\n-&gt; +3dB evit an enrolladennoù graet goude 2000</string>
+  <string name="replaygain_preamp_note_content">Android na aotre ket Vanilla Plus da greskiñ an ampled eus 100%. Lakaat ar ragampled d\'un talvoud uhel a c\'hall degas kudennoù ma selaouit ouzh sonerezh \'sioul\'. \n\¬AN talvoudoù aliet a zo:\n-&gt; -3dB evit sonerezh sioul/klasel\n-&gt; +3dB evit an enrolladennoù graet goude 2000</string>
   <string name="readahead">Gweredekaat ar ragseniñ</string>
   <string name="readahead_summary">Ragseniñ an ton bremanel. An dibarzh-se a c\'hall diskoulmañ kudennoù koll aodio (abalamour d\'ur gartenn SD gorrek)</string>
   <string name="equalizer">Ingalaer</string>
@@ -221,7 +221,7 @@
   <string name="disable_lockscreen_title">Diweredekaat prennañ ar skramm</string>
   <string name="disable_lockscreen_summary">Mirout a ra vefe prennet ar skramm p\'emañ war skramm ar sonaoueg pe ar roudenn o seniñ.</string>
   <string name="keep_screen_on_title">Derc\'hel ar skramm war elum.</string>
-  <string name="keep_screen_on_summary">Derc\'hel ar skramm (hag an trevnad) dihun p\'eo gwelus Vanilla Music</string>
+  <string name="keep_screen_on_summary">Derc\'hel ar skramm (hag an trevnad) dihun p\'eo gwelus Vanilla Plus</string>
   <string name="use_idle_timeout_title">Gweredekaat ar prantad dioberiantiz</string>
   <string name="use_idle_timeout_summary">P\'eo gweredekaet an dibarzh e paouezo da seniñ goude ar prantad dioberiantiz roet</string>
   <string name="idle_timeout_title">Prantad dioberiantiz</string>
@@ -312,7 +312,7 @@
   <string name="playlist_sync_disabled">Diweredekaet</string>
   <string name="playlist_sync_folder_title">Teuliad goubredañ</string>
   <string name="playlist_sync_folder_summary">Teuliad da arverañ evit goubredañ ar rolloù seniñ</string>
-  <string name="permission_request_summary">Ezhomm en deus Vanilla Music da gaout an aotre da lenn ar restroù evit diskouez ho sonaoueg.</string>
+  <string name="permission_request_summary">Ezhomm en deus Vanilla Plus da gaout an aotre da lenn ar restroù evit diskouez ho sonaoueg.</string>
   <string name="reverse_sort">Tuginañ an urzh</string>
   <string name="share">Rannañ...</string>
   <string name="share_failed">Fazi en ur rannañ ar restr</string>

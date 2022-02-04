@@ -132,7 +132,7 @@
   <string name="replaygain_untagged_debump_title">רצועות ללא תוית הגבר פיצוי</string>
   <string name="replaygain_untagged_debump_summary">הנמך עוצמה לפי</string>
   <string name="replaygain_preamp_note_title">הערה</string>
-  <string name="replaygain_preamp_note_content">מערכת אנדרואיד לא מאפשר ל- Vanilla Music להגביר את העוצמה ל- &gt;100%. הגדרת קדם המגבר לערך גבוה עלול לגרום לבעיות בהאזנה למוסיקה \'שקטה\'. \n\nהערכים המומלצים הם: \n-&gt; -3dB למוסיקה שקטה/קלאסית \n-&gt; +3dB להקלטות לאחר שנות ה-2000.</string>
+  <string name="replaygain_preamp_note_content">מערכת אנדרואיד לא מאפשר ל- Vanilla Plus להגביר את העוצמה ל- &gt;100%. הגדרת קדם המגבר לערך גבוה עלול לגרום לבעיות בהאזנה למוסיקה \'שקטה\'. \n\nהערכים המומלצים הם: \n-&gt; -3dB למוסיקה שקטה/קלאסית \n-&gt; +3dB להקלטות לאחר שנות ה-2000.</string>
   <string name="readahead">אפשר קריאה מראש</string>
   <string name="readahead_summary">קרא מראש את הרצועה הנוכחית. אפשרות זו עשויה לפתור את בעיית \'נפילת שמע\' (הנגרמת מכרטיס SD איטי).</string>
   <string name="equalizer">איקולייזר</string>
@@ -227,7 +227,7 @@
   <string name="autoplaylist_playcounts_fmt" formatted="false">%s \'Top %.0f\' רשימת השמעה</string>
   <string name="autoplaylist_playcounts_disabled">אל תיצור רשימת השמעה אוטומטית</string>
   <string name="autoplaylist_playcounts_name" formatted="false">למעלה %d</string>
-  <string name="permission_request_summary">Vanilla Music צריך להרשאה לקרוא כדי להציג את ספריית המוסיקה שלך </string>
+  <string name="permission_request_summary">Vanilla Plus צריך להרשאה לקרוא כדי להציג את ספריית המוסיקה שלך </string>
   <string name="reverse_sort">הפוך סדר</string>
   <string name="share">שתף...</string>
   <string name="sendto">שלח אל...</string>

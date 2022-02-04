@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">Peru</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Kappaleet ilman ReplayGain-tunnistetta</string>
   <string name="replaygain_untagged_debump_summary">Vähennä äänenvoimakkuutta</string>
   <string name="replaygain_preamp_note_title">Huomio</string>
-  <string name="replaygain_preamp_note_content">Android ei salli Vanilla Musicin nostaa äänenvoimakkuutta &gt;100%. Esivahvistuksen asettaminen suurelle arvolle saattaa aiheuttaa ongelmia, jos kuuntelet \"hiljaista\" musiikkia. \n\nSuositellut arvot ovat:\n-&gt; -3dB hiljaiselle/klassiselle musiikille\n-&gt; +3dB 2000-luvun ja uudemmalle musiikille</string>
+  <string name="replaygain_preamp_note_content">Android ei salli Vanilla Plusin nostaa äänenvoimakkuutta &gt;100%. Esivahvistuksen asettaminen suurelle arvolle saattaa aiheuttaa ongelmia, jos kuuntelet \"hiljaista\" musiikkia. \n\nSuositellut arvot ovat:\n-&gt; -3dB hiljaiselle/klassiselle musiikille\n-&gt; +3dB 2000-luvun ja uudemmalle musiikille</string>
   <string name="readahead">Käytä etukäteen lukemista</string>
   <string name="readahead_summary">Lue eteenpäin toistettavaa kappaletta. Tämä valinta voi auttaa sellaisiin äänen katkeamisongelmiin, mitkä johtuvat hitaasta SD-kortista.</string>
   <string name="equalizer">Taajuuskorjain</string>
@@ -197,7 +197,7 @@
   <string name="disable_lockscreen_title">Estä lukitusnäyttö</string>
   <string name="disable_lockscreen_summary">Estä lukitusnäytön aktivoituminen kirjasto- ja toistonäkymässä</string>
   <string name="keep_screen_on_title">Pidä näyttö päällä</string>
-  <string name="keep_screen_on_summary">Pidä näyttö (ja laite) päällä, kun Vanilla Music on esillä</string>
+  <string name="keep_screen_on_summary">Pidä näyttö (ja laite) päällä, kun Vanilla Plus on esillä</string>
   <string name="use_idle_timeout_title">Käytä joutenolon aikakatkaisua</string>
   <string name="use_idle_timeout_summary">Kun käytössä, toisto lopetetaan tietyn joutoajan jälkeen</string>
   <string name="idle_timeout_title">Joutenolon aikakatkaisu</string>
@@ -292,7 +292,7 @@
   <string name="playlist_sync_folder_summary">Soittolistan synkronointiin käytettävä kansio</string>
   <string name="playlist_export_relative_paths_title">Vie käyttäen suhteellisia polkuja</string>
   <string name="playlist_export_relative_paths_summary">Viittaa tiedostopolkuihin suhteellisena soittolistaan</string>
-  <string name="permission_request_summary">Vanilla Music tarvitsee lukuoikeuden näyttääkseen musiikkikirjastosi</string>
+  <string name="permission_request_summary">Vanilla Plus tarvitsee lukuoikeuden näyttääkseen musiikkikirjastosi</string>
   <string name="reverse_sort">Käänteinen järjestys</string>
   <string name="share">Jaa…</string>
   <string name="share_failed">Tiedoston jakaminen epäonnistui</string>

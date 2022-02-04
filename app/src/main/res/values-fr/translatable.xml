@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">Annuler</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Morceaux sans le tag ReplayGain</string>
   <string name="replaygain_untagged_debump_summary">Diminuer le volume de</string>
   <string name="replaygain_preamp_note_title">Note</string>
-  <string name="replaygain_preamp_note_content">Android n\'autorise pas Vanilla Music à augmenter le volume au delà de 100%. Un réglage élevé du Pré-ampli peut provoquer des problèmes à l\'écoute de musique \'calme\'. \n\nLes valeurs recommandées sont:\n-&gt; -3dB pour la musique classique/douce\n-&gt; +3dB pour les enregistrements postérieurs à 2000</string>
+  <string name="replaygain_preamp_note_content">Android n\'autorise pas Vanilla Plus à augmenter le volume au delà de 100%. Un réglage élevé du Pré-ampli peut provoquer des problèmes à l\'écoute de musique \'calme\'. \n\nLes valeurs recommandées sont:\n-&gt; -3dB pour la musique classique/douce\n-&gt; +3dB pour les enregistrements postérieurs à 2000</string>
   <string name="readahead">Activer la pré-lecture</string>
   <string name="readahead_summary">Pré-lecture du morceau en cours de lecture. Cette option peut résoudre les problèmes de perte de niveau (dus à une carte SD lente)</string>
   <string name="equalizer">Égaliseur</string>
@@ -292,7 +292,7 @@
   <string name="playlist_sync_folder_summary">Dossier à utiliser pour la synchronisation des playlists</string>
   <string name="playlist_export_relative_paths_title">Exporter avec des chemins relatifs</string>
   <string name="playlist_export_relative_paths_summary">Utiliser des chemins de fichiers relatifs à la playlist</string>
-  <string name="permission_request_summary">Vanilla Music a besoin d\'une permission de lecture pour afficher votre bibliothèque musicale</string>
+  <string name="permission_request_summary">Vanilla Plus a besoin d\'une permission de lecture pour afficher votre bibliothèque musicale</string>
   <string name="reverse_sort">Inverser le tri</string>
   <string name="share">Partager</string>
   <string name="share_failed">Échec du partage</string>

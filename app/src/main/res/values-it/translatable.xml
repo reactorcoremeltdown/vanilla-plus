@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">Annulla</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Brani senza tag per ReplayGain</string>
   <string name="replaygain_untagged_debump_summary">Diminuisci il volume per</string>
   <string name="replaygain_preamp_note_title">Nota</string>
-  <string name="replaygain_preamp_note_content">Android non consente a Vanilla Music di alzare il volume a &gt;100%. L\'impostazione della pre-amplificazione a un valore elevato potrebbe provocare dei problemi se stai ascoltando musica \"poco rumorosa\".\n\nI valori consigliati sono:\n-&gt; -3 dB per musica silenziosa/classica\n-&gt; +3 dB per registrazioni post-2000</string>
+  <string name="replaygain_preamp_note_content">Android non consente a Vanilla Plus di alzare il volume a &gt;100%. L\'impostazione della pre-amplificazione a un valore elevato potrebbe provocare dei problemi se stai ascoltando musica \"poco rumorosa\".\n\nI valori consigliati sono:\n-&gt; -3 dB per musica silenziosa/classica\n-&gt; +3 dB per registrazioni post-2000</string>
   <string name="readahead">Abilita precaricamento</string>
   <string name="readahead_summary">Leggi l\'attuale brano in riproduzione. Questa opzione può risolvere i problemi di \"perdita d\'audio\" (causati da una lenta scheda SD).</string>
   <string name="equalizer">Equalizzatore</string>
@@ -197,7 +197,7 @@
   <string name="disable_lockscreen_title">Disattiva schermata di blocco</string>
   <string name="disable_lockscreen_summary">Previene l\'attivazione della lockscreen quando si è nella libreria o nella schermata playback</string>
   <string name="keep_screen_on_title">Mantenere acceso lo schermo</string>
-  <string name="keep_screen_on_summary">Mantenere lo schermo (e il dispositivo) accesi mentre Vanilla Music è visibile</string>
+  <string name="keep_screen_on_summary">Mantenere lo schermo (e il dispositivo) accesi mentre Vanilla Plus è visibile</string>
   <string name="use_idle_timeout_title">Attiva timeout di inattività</string>
   <string name="use_idle_timeout_summary">Quando attivo, il playback si fermerà dopo un dato periodo di inattività</string>
   <string name="idle_timeout_title">Timeout inattività</string>
@@ -290,7 +290,7 @@
   <string name="playlist_sync_folder_summary">Cartella da usare per la sincronizzazione delle playlist</string>
   <string name="playlist_export_relative_paths_title">Esporta usando percorso relativo</string>
   <string name="playlist_export_relative_paths_summary">Percorsi di riferimento relativi alla playlist</string>
-  <string name="permission_request_summary">Vanilla Music richiede i permessi di lettura per visualizzare la libreria musicale</string>
+  <string name="permission_request_summary">Vanilla Plus richiede i permessi di lettura per visualizzare la libreria musicale</string>
   <string name="reverse_sort">Ordinamento inverso</string>
   <string name="share">Condividi…</string>
   <string name="share_failed">Fallita condivisione del file</string>

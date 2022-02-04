@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">D\'acord</string>
   <string name="cancel">Cancel·la</string>
   <!--Playback Activity (main screen)-->
@@ -125,7 +125,7 @@
   <string name="volume_during_ducking_title">Volum durant la notificació</string>
   <string name="volume_during_ducking_summary">Volum de reproducció:</string>
   <string name="replaygain_preamp_note_title">Nota</string>
-  <string name="replaygain_preamp_note_content">Android no permet que el volum del Vanilla Music arribi al &gt;100%. Configurant l\'amplificació prèvia a valors alts pot causar problemes si escolteu música «relaxant». \n\nEls valors recomanats són:\n-&gt; -3dB per a música classica/relaxant\n-&gt; +3dB per a pistes posteriors a l\'any 2000</string>
+  <string name="replaygain_preamp_note_content">Android no permet que el volum del Vanilla Plus arribi al &gt;100%. Configurant l\'amplificació prèvia a valors alts pot causar problemes si escolteu música «relaxant». \n\nEls valors recomanats són:\n-&gt; -3dB per a música classica/relaxant\n-&gt; +3dB per a pistes posteriors a l\'any 2000</string>
   <string name="readahead">Carrega a la memòria</string>
   <string name="readahead_summary">Carrega a la memòria la pista actual. Aquesta opció evita el so entretallat durant la reproducció (causat per una targeta SD lenta)</string>
   <string name="equalizer">Equalitzador</string>
@@ -180,7 +180,7 @@
   <string name="save">Desa</string>
   <string name="autoplaylist_playcounts_title">Creació automàtica d\'una llista de reproducció</string>
   <string name="autoplaylist_playcounts_disabled">No creïs cap llista de reproducció automàtica</string>
-  <string name="permission_request_summary">El Vanilla Music necessita permisos per accedir als fitxers multimèdia</string>
+  <string name="permission_request_summary">El Vanilla Plus necessita permisos per accedir als fitxers multimèdia</string>
   <string name="share">Comparteix…</string>
   <string name="sendto">Envia a…</string>
   <string name="no_receiving_apps">No s\'han trobat aplicacions per manegar aquest tipus de fitxer!</string>

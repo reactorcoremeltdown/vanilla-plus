@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">Avbryt</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Låtar utan ReplayGain-taggen</string>
   <string name="replaygain_untagged_debump_summary">Minska volymen med</string>
   <string name="replaygain_preamp_note_title">Observera</string>
-  <string name="replaygain_preamp_note_content">Android tillåter inte Vanilla Music att höja volymen till &gt;100%. Ställa in förförstärken till ett högt värde kan orsaka problem om du lyssnar på \"tyst\" musik.\n\nRekommendrade värden är:\n-&gt; -3dB för tyst/klassisk musik\n-&gt; +3dB för post-2000 inspelningar</string>
+  <string name="replaygain_preamp_note_content">Android tillåter inte Vanilla Plus att höja volymen till &gt;100%. Ställa in förförstärken till ett högt värde kan orsaka problem om du lyssnar på \"tyst\" musik.\n\nRekommendrade värden är:\n-&gt; -3dB för tyst/klassisk musik\n-&gt; +3dB för post-2000 inspelningar</string>
   <string name="readahead">Aktivera att läsa vidare</string>
   <string name="readahead_summary">Läs vidare den aktuella låten. Det här alternativet kan lösa \"ljudavbrotts\"-problem. (orsakas av ett långsam SD-kort)</string>
   <string name="equalizer">Frekvenskorrigerare</string>
@@ -197,7 +197,7 @@
   <string name="disable_lockscreen_title">Inaktivera låsskärmen</string>
   <string name="disable_lockscreen_summary">Förhindra att låsskärmen aktiveras när biblioteket eller uppspelningsskärmen visas</string>
   <string name="keep_screen_on_title">Behåll skärmen på</string>
-  <string name="keep_screen_on_summary">Behåll skärmen (och enheten) vaken medan Vanilla Music är synlig</string>
+  <string name="keep_screen_on_summary">Behåll skärmen (och enheten) vaken medan Vanilla Plus är synlig</string>
   <string name="use_idle_timeout_title">Aktivera tidsgräns för inaktivitet</string>
   <string name="use_idle_timeout_summary">När den är aktiv stoppas uppspelningen efter den angivna inaktivitetsperioden</string>
   <string name="idle_timeout_title">Tidsgräns för inaktivitet</string>
@@ -290,7 +290,7 @@
   <string name="playlist_sync_folder_summary">Mapp som ska användas för synkronisering av spellistor</string>
   <string name="playlist_export_relative_paths_title">Exportera med relativa sökvägar</string>
   <string name="playlist_export_relative_paths_summary">Referensfilsökvägar i förhållande till spellistan</string>
-  <string name="permission_request_summary">Vanilla Music behöver läsbehörighet för att visa ditt musikbibliotek</string>
+  <string name="permission_request_summary">Vanilla Plus behöver läsbehörighet för att visa ditt musikbibliotek</string>
   <string name="reverse_sort">Omvänd sortering</string>
   <string name="share">Dela…</string>
   <string name="share_failed">Det gick inte att dela filen</string>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">Добра</string>
   <string name="cancel">Скасаваць</string>
   <!--Playback Activity (main screen)-->
@@ -183,7 +183,7 @@
   <string name="replaygain_untagged_debump_title">Кампазіцыі без пазнак перадузмацнення</string>
   <string name="replaygain_untagged_debump_summary">Панізіць гучнасць</string>
   <string name="replaygain_preamp_note_title">Нататка</string>
-  <string name="replaygain_preamp_note_content">Android не дае Vanilla Music павялічыць гучнасць больш за &gt;100%. Таму пры прайграванні ціхай музыкі з вялікім перадузмацненнем могуць узнікнуць праблемы. \n\nРэкамендуецца:\n-&gt; -3dB для ціхай ці класічнай музыкі і \n-&gt; +3dB для запісаў пасля 2000 года</string>
+  <string name="replaygain_preamp_note_content">Android не дае Vanilla Plus павялічыць гучнасць больш за &gt;100%. Таму пры прайграванні ціхай музыкі з вялікім перадузмацненнем могуць узнікнуць праблемы. \n\nРэкамендуецца:\n-&gt; -3dB для ціхай ці класічнай музыкі і \n-&gt; +3dB для запісаў пасля 2000 года</string>
   <string name="readahead">Уключыць папярэдні кэш</string>
   <string name="readahead_summary">Папярэдняе кэшаванне дапамагае пазбавіцца ад праблем знікнення гуку на павольных картках памяці.</string>
   <string name="equalizer">Эквалайзер</string>
@@ -213,7 +213,7 @@
   <string name="disable_lockscreen_title">Адключыць блакаванне экрана</string>
   <string name="disable_lockscreen_summary">Замінаць уключэнню блакавання экрана пры адкрытай бібліятэцы ці падчас прайгравання</string>
   <string name="keep_screen_on_title">Не выключаць экран</string>
-  <string name="keep_screen_on_summary">Пакідаць экран уключаным пры бачным акне Vanilla Music</string>
+  <string name="keep_screen_on_summary">Пакідаць экран уключаным пры бачным акне Vanilla Plus</string>
   <string name="use_idle_timeout_title">Уключыць час чакання</string>
   <string name="use_idle_timeout_summary">Калі актыўна, прайграванне спыніцца пасля вызначанага перыяду бяздзейнасці</string>
   <string name="idle_timeout_title">Час чакання</string>
@@ -308,7 +308,7 @@
   <string name="playlist_sync_folder_summary">Каталог для сінхранізацыі спісаў прайгравання</string>
   <string name="playlist_export_relative_paths_title">Экспарт з дапамогай адносных шляхоў</string>
   <string name="playlist_export_relative_paths_summary">Спасылкі ў шляху адносна спіса прайгравання</string>
-  <string name="permission_request_summary">Для паказу вашай бібліятэкі Vanilla Music патрэбны дазвол на чытанне</string>
+  <string name="permission_request_summary">Для паказу вашай бібліятэкі Vanilla Plus патрэбны дазвол на чытанне</string>
   <string name="reverse_sort">Адваротны парадак</string>
   <string name="share">Падзяліцца…</string>
   <string name="share_failed">Не атрымалася падзяліцца файлам</string>

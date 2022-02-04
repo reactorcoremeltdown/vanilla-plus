@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">Potwierdź</string>
   <string name="cancel">Anuluj</string>
   <!--Playback Activity (main screen)-->
@@ -183,7 +183,7 @@
   <string name="replaygain_untagged_debump_title">Dla utworów bez znacznika ReplayGain</string>
   <string name="replaygain_untagged_debump_summary">Ściszenie dzwięku o</string>
   <string name="replaygain_preamp_note_title">Uwaga</string>
-  <string name="replaygain_preamp_note_content">Android nie pozwala Vanilla Music na podniesienie głośności dźwięku do &gt;100%. Ustawianie wysokiej wartości przedwzmocnienia dźwięku może powodować problemy, jeżeli słuchasz „cichego” utworu. \n\nZalecane wartości to:\n-&gt; -3dB dla cichej/klasycznej muzyki\n-&gt; +3dB dla nagrań po 2000 r.</string>
+  <string name="replaygain_preamp_note_content">Android nie pozwala Vanilla Plus na podniesienie głośności dźwięku do &gt;100%. Ustawianie wysokiej wartości przedwzmocnienia dźwięku może powodować problemy, jeżeli słuchasz „cichego” utworu. \n\nZalecane wartości to:\n-&gt; -3dB dla cichej/klasycznej muzyki\n-&gt; +3dB dla nagrań po 2000 r.</string>
   <string name="readahead">Włączenie wczytywania z wyprzedzeniem</string>
   <string name="readahead_summary">Wczytuj z wyprzedzeniem aktualnie odtwarzany utwór. Ta opcja może rozwiązać problem zacinania dźwięku (spowodowany wolną kartą SD).</string>
   <string name="equalizer">Korektor dźwięku</string>
@@ -213,7 +213,7 @@
   <string name="disable_lockscreen_title">Wyłączenie ekranu blokady</string>
   <string name="disable_lockscreen_summary">Przeciwdziała włączaniu blokady ekranu w momencie przeglądania biblioteki lub ekranu odtwarzania</string>
   <string name="keep_screen_on_title">Trzymaj ekran włączony</string>
-  <string name="keep_screen_on_summary">Nie wyłączaj ekranu (i urządzenia) podczas gdy Vanilla Music jest aktywny</string>
+  <string name="keep_screen_on_summary">Nie wyłączaj ekranu (i urządzenia) podczas gdy Vanilla Plus jest aktywny</string>
   <string name="use_idle_timeout_title">Włączenie czasu bezczynności</string>
   <string name="use_idle_timeout_summary">Gdy aktywne, odtwarzanie zostanie zatrzymane po upływie ustawionej wartości czasu nieaktywności</string>
   <string name="idle_timeout_title">Czas bezczynności</string>
@@ -240,7 +240,7 @@
   <string name="stock_broadcast_title">Emulowanie systemowych komunikatów</string>
   <string name="stock_broadcast_summary">Wysyła komunikaty udające komunikaty wysyłane przez systemowy odtwarzacz muzyki, aby współpracowały z trzecimi aplikacjami blokad ekranów, widżetów, itp.</string>
   <string name="help">Pomoc</string>
-  <string name="about">O Vanilla Music...</string>
+  <string name="about">O Vanilla Plus...</string>
   <string name="tabs">Kolejność zakładek</string>
   <string name="customize_tab_order">Dostosowanie kolejności oraz widoczności zakładek biblioteki</string>
   <string name="restore_default">Przywróć domyślne</string>
@@ -306,7 +306,7 @@
   <string name="playlist_sync_folder_summary">Katalog do synchronizacji list odtwarzania</string>
   <string name="playlist_export_relative_paths_title">Eksportuj używając ścieżek względnych</string>
   <string name="playlist_export_relative_paths_summary">Ścieżki plików są względne do katalogu z listą odtwarzania</string>
-  <string name="permission_request_summary">Vanilla Music potrzebuje uprawnień do wyświetlenia Twojej biblioteki muzycznej</string>
+  <string name="permission_request_summary">Vanilla Plus potrzebuje uprawnień do wyświetlenia Twojej biblioteki muzycznej</string>
   <string name="reverse_sort">Odwróć sortowanie</string>
   <string name="share">Udostępnij…</string>
   <string name="share_failed">Nie udało się udostępnić pliku</string>

@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">Cancelar</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Faixas sem informação ReplayGain</string>
   <string name="replaygain_untagged_debump_summary">Diminuir volume em</string>
   <string name="replaygain_preamp_note_title">Nota</string>
-  <string name="replaygain_preamp_note_content">Os sistemas Android não permitem que o Vanilla Music aumente o volume para valores &gt;100%. A utilização de um valor mais alto do amplificador pode gerar problemas se estiver a ouvir músicas calmas.\n\nOs valores recomendados são:\n-&gt; -3dB para músicas calmas ou clássicas\n-&gt; +3dB para músicas gravadas após o ano 2000.</string>
+  <string name="replaygain_preamp_note_content">Os sistemas Android não permitem que o Vanilla Plus aumente o volume para valores &gt;100%. A utilização de um valor mais alto do amplificador pode gerar problemas se estiver a ouvir músicas calmas.\n\nOs valores recomendados são:\n-&gt; -3dB para músicas calmas ou clássicas\n-&gt; +3dB para músicas gravadas após o ano 2000.</string>
   <string name="readahead">Ativar \'readahead\'</string>
   <string name="readahead_summary">\'Readahead\' da faixa atual. A opção pode resolver os erros \'audio dropout\'. (Causados por um cartão SD lento)</string>
   <string name="equalizer">Equalizador</string>
@@ -290,7 +290,7 @@
   <string name="playlist_sync_folder_summary">Pasta a utilizar para sincronizar a lista de reprodução</string>
   <string name="playlist_export_relative_paths_title">Exportar utilizando caminhos relativos</string>
   <string name="playlist_export_relative_paths_summary">Exportar lista de reprodução utilizando caminhos relativos</string>
-  <string name="permission_request_summary">O Vanilla Music necessita da permissão de leitura para mostrar a sua coleção</string>
+  <string name="permission_request_summary">O Vanilla Plus necessita da permissão de leitura para mostrar a sua coleção</string>
   <string name="reverse_sort">Inverter organização</string>
   <string name="share">Partilhar...</string>
   <string name="share_failed">Falha ao partilhar ficheiro</string>

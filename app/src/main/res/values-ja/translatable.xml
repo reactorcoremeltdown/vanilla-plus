@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">キャンセル</string>
   <!--Playback Activity (main screen)-->
@@ -159,7 +159,7 @@
   <string name="replaygain_untagged_debump_title">リプレイゲイン タグがないトラック</string>
   <string name="replaygain_untagged_debump_summary">音量を下げる</string>
   <string name="replaygain_preamp_note_title">注意</string>
-  <string name="replaygain_preamp_note_content">Android で Vanilla Music の音量を &gt;100% に上げることはできません。プリアンプを高い値に設定することは、\'静かな\' 音楽を聴いているときに問題になります。\n\n推奨の値は:\n-&gt; -3dB : 静かな/クラシック音楽\n-&gt; +3dB : post-2000 の録音</string>
+  <string name="replaygain_preamp_note_content">Android で Vanilla Plus の音量を &gt;100% に上げることはできません。プリアンプを高い値に設定することは、\'静かな\' 音楽を聴いているときに問題になります。\n\n推奨の値は:\n-&gt; -3dB : 静かな/クラシック音楽\n-&gt; +3dB : post-2000 の録音</string>
   <string name="readahead">先読みを有効にする</string>
   <string name="readahead_summary">現在再生中のトラックを先読みします。このオプションは、(遅いSDカードによって引き起こされる) \'オーディオ ドロップアウト\' の問題を解決することがあります。</string>
   <string name="equalizer">イコライザー</string>
@@ -189,7 +189,7 @@
   <string name="disable_lockscreen_title">ロック画面を無効にする</string>
   <string name="disable_lockscreen_summary">ライブラリーや再生画面でロック画面が有効になるのを防止します</string>
   <string name="keep_screen_on_title">画面をオンのままにする</string>
-  <string name="keep_screen_on_summary">Vanilla Music が表示されている間、画面 (とデバイス) をオンのままにします</string>
+  <string name="keep_screen_on_summary">Vanilla Plus が表示されている間、画面 (とデバイス) をオンのままにします</string>
   <string name="use_idle_timeout_title">アイドル タイムアウトを有効にする</string>
   <string name="use_idle_timeout_summary">有効な場合、一定期間アイドルになると再生が停止されます</string>
   <string name="idle_timeout_title">アイドル タイムアウト</string>
@@ -284,7 +284,7 @@
   <string name="playlist_sync_folder_summary">プレイリストの同期に使用するフォルダー</string>
   <string name="playlist_export_relative_paths_title">相対パスを使用してエクスポート</string>
   <string name="playlist_export_relative_paths_summary">再生リストに対する相対ファイルパスを参照します</string>
-  <string name="permission_request_summary">Vanilla Music  が音楽ライブラリを表示するために、読み取りのアクセス許可が必要です</string>
+  <string name="permission_request_summary">Vanilla Plus  が音楽ライブラリを表示するために、読み取りのアクセス許可が必要です</string>
   <string name="reverse_sort">逆順に並び替え</string>
   <string name="share">共有…</string>
   <string name="share_failed">ファイルの共有に失敗しました</string>

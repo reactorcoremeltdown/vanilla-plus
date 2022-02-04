@@ -21,7 +21,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 -->
 <resources>
-	<string name="app_name">Vanilla Music</string>
+	<string name="app_name">Vanilla Plus</string>
 	<string name="ok">OK</string>
 	<string name="cancel">Cancel</string>
 
@@ -203,7 +203,7 @@ THE SOFTWARE.
 	<string name="replaygain_untagged_debump_title">Tracks without ReplayGain tag</string>
 	<string name="replaygain_untagged_debump_summary">Decrease volume by</string>
 	<string name="replaygain_preamp_note_title">Note</string>
-	<string name="replaygain_preamp_note_content">Android does not allow Vanilla Music to raise the volume to >100%. Setting the Pre-amp to a high value may cause issues if you are listening to \'quiet\' music. \n\nRecommended values are:\n-> -3dB for silent/classical music\n-> +3dB for post-2000 recordings</string>
+	<string name="replaygain_preamp_note_content">Android does not allow Vanilla Plus to raise the volume to >100%. Setting the Pre-amp to a high value may cause issues if you are listening to \'quiet\' music. \n\nRecommended values are:\n-> -3dB for silent/classical music\n-> +3dB for post-2000 recordings</string>
 
 	<string name="readahead">Enable readahead</string>
 	<string name="readahead_summary">Readahead the currently playing track. This option may solve \'audio dropout\' issues. (caused by a slow SD card)</string>
@@ -241,7 +241,7 @@ THE SOFTWARE.
 	<string name="disable_lockscreen_title">Disable lockscreen</string>
 	<string name="disable_lockscreen_summary">Prevent the lockscreen from activating when in the library or playback screen</string>
 	<string name="keep_screen_on_title">Keep screen on</string>
-	<string name="keep_screen_on_summary">Keep the screen (and device) awake while Vanilla Music is visible</string>
+	<string name="keep_screen_on_summary">Keep the screen (and device) awake while Vanilla Plus is visible</string>
 	<string name="use_idle_timeout_title">Enable idle timeout</string>
 	<string name="use_idle_timeout_summary">When active, playback will be stopped after the given period of inactivity</string>
 	<string name="idle_timeout_title">Idle timeout</string>
@@ -358,7 +358,7 @@ THE SOFTWARE.
 	<string name="playlist_export_relative_paths_title">Export using relative paths</string>
 	<string name="playlist_export_relative_paths_summary">Reference file paths relative to the playlist</string>
 
-	<string name="permission_request_summary">Vanilla Music needs read permission to display your music library</string>
+	<string name="permission_request_summary">Vanilla Plus needs read permission to display your music library</string>
 	<string name="reverse_sort">Reverse sort</string>
 
 	<string name="share">Share…</string>

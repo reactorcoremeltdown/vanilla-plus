@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <!--Playback Activity (main screen)-->
   <string name="no_songs">Không tìm thấy bài hát nào trên máy.</string>
   <string name="empty_queue">Chưa chọn bài hát nào. Hãy chọn bài hát từ thư viện nhạc hoặc chạm vào dòng chữ này để phát ngẫu nhiên các bài hát.</string>
@@ -151,7 +151,7 @@
   <string name="replaygain_untagged_debump_title">Với các bài không có thông tin ReplayGain</string>
   <string name="replaygain_untagged_debump_summary">Giảm âm lượng đi</string>
   <string name="replaygain_preamp_note_title">Chú ý</string>
-  <string name="replaygain_preamp_note_content">Android không cho phép Vanilla Music tăng âm lượng lên quá 100%. Đặt mức tiền khuếch đại quá cao có thể gây ra vấn đề với các bài hát vốn có âm lượng nhỏ. \n\nNên dùng các giá trị:\n-&gt; -3dB đối với nhạc nhỏ / nhạc cổ điển\n-&gt; +3dB đối với nhạc sau năm 2000</string>
+  <string name="replaygain_preamp_note_content">Android không cho phép Vanilla Plus tăng âm lượng lên quá 100%. Đặt mức tiền khuếch đại quá cao có thể gây ra vấn đề với các bài hát vốn có âm lượng nhỏ. \n\nNên dùng các giá trị:\n-&gt; -3dB đối với nhạc nhỏ / nhạc cổ điển\n-&gt; +3dB đối với nhạc sau năm 2000</string>
   <string name="readahead">Bật đọc trước</string>
   <string name="readahead_summary">Đọc trước nội dung bài đang phát. Lựa chọn này có thể giải quyết vấn đề nhạc bị dừng (do thẻ nhớ quá chậm).</string>
   <string name="equalizer">Bộ chỉnh âm</string>
@@ -181,7 +181,7 @@
   <string name="disable_lockscreen_title">Tắt màn hình khoá</string>
   <string name="disable_lockscreen_summary">Không cho màn hình khoá hoạt động khi đang trong giao diện thư viện hoặc phát nhạc</string>
   <string name="keep_screen_on_title">Giữ màn hình sáng</string>
-  <string name="keep_screen_on_summary">Giữ màn hình luôn sáng (và máy luôn bật) khi đang trong ứng dụng Vanilla Music</string>
+  <string name="keep_screen_on_summary">Giữ màn hình luôn sáng (và máy luôn bật) khi đang trong ứng dụng Vanilla Plus</string>
   <string name="use_idle_timeout_title">Bật hẹn giờ</string>
   <string name="use_idle_timeout_summary">Khi bật tính năng này, nhạc sẽ tự dừng sau một khoảng thời gian không có hành động nào xảy ra</string>
   <string name="idle_timeout_title">Hẹn giờ</string>
@@ -253,7 +253,7 @@
   <string name="autoplaylist_playcounts_fmt" formatted="false">danh sách %s \"Top %.0f\"</string>
   <string name="autoplaylist_playcounts_disabled">Không tạo danh sách tự động</string>
   <string name="autoplaylist_playcounts_name" formatted="false">Top %d</string>
-  <string name="permission_request_summary">Vanilla Music cần quyền đọc dữ liệu để hiển thị thư viện nhạc của bạn</string>
+  <string name="permission_request_summary">Vanilla Plus cần quyền đọc dữ liệu để hiển thị thư viện nhạc của bạn</string>
   <string name="reverse_sort">Sắp xếp ngược lại</string>
   <string name="share">Chia sẻ…</string>
   <string name="share_failed">Không chia sẻ được tập tin</string>

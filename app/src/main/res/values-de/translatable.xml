@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">OK</string>
   <string name="cancel">Abbrechen</string>
   <!--Playback Activity (main screen)-->
@@ -167,7 +167,7 @@
   <string name="replaygain_untagged_debump_title">Titel ohne ReplayGain-Informationen</string>
   <string name="replaygain_untagged_debump_summary">Lautstärke senken um: </string>
   <string name="replaygain_preamp_note_title">Hinweis</string>
-  <string name="replaygain_preamp_note_content">Android erlaubt Vanilla Music kein Verändern der Lautstärke auf über 100%. Hohe Werte für den Vorverstärker können bei »stiller« Musik zu Problemen führen.\n\nEmpfohlene Werte sind:\n-&gt; -3 dB für stille/klassische Musik\n-&gt; +3 dB für Aufnahmen nach dem Jahr 2000</string>
+  <string name="replaygain_preamp_note_content">Android erlaubt Vanilla Plus kein Verändern der Lautstärke auf über 100%. Hohe Werte für den Vorverstärker können bei »stiller« Musik zu Problemen führen.\n\nEmpfohlene Werte sind:\n-&gt; -3 dB für stille/klassische Musik\n-&gt; +3 dB für Aufnahmen nach dem Jahr 2000</string>
   <string name="readahead">Datei vorauslesen</string>
   <string name="readahead_summary">Aktuell wiedergegebenen Titel im Voraus einlesen (löst ggf. Audioprobleme mit langsamen SD-Karten)</string>
   <string name="equalizer">Equalizer</string>
@@ -197,7 +197,7 @@
   <string name="disable_lockscreen_title">Bildschirmsperre deaktivieren</string>
   <string name="disable_lockscreen_summary">Bildschirmsperre verhindern, wenn Bibliotheks- oder Wiedergabeansicht aktiv</string>
   <string name="keep_screen_on_title">Bildschirm nicht ausschalten</string>
-  <string name="keep_screen_on_summary">Bildschirm (und Gerät) eingeschaltet lassen, während Vanilla Music sichtbar ist</string>
+  <string name="keep_screen_on_summary">Bildschirm (und Gerät) eingeschaltet lassen, während Vanilla Plus sichtbar ist</string>
   <string name="use_idle_timeout_title">Anhalten bei Inaktivität</string>
   <string name="use_idle_timeout_summary">Falls aktiviert, wird die Wiedergabe nach der angegebenen Inaktivitätsdauer angehalten</string>
   <string name="idle_timeout_title">Inaktivitätsdauer</string>
@@ -236,7 +236,7 @@
   <string name="open_main_activity">Bibliothek öffnen (Standard)</string>
   <string name="open_mini_popup">Mini-Popup öffnen</string>
   <string name="skip_to_next_song">Zum nächsten Titel springen</string>
-  <string name="open_full_player">Vanilla Music öffnen</string>
+  <string name="open_full_player">Vanilla Plus öffnen</string>
   <string name="info_on_cover">Info auf dem Cover</string>
   <string name="info_below_cover">Info unter dem Cover</string>
   <string name="fixed_info">Info oben fixiert</string>
@@ -292,7 +292,7 @@
   <string name="playlist_sync_folder_summary">Zu verwendender Ordner für Wiedergabelistensynchronisation</string>
   <string name="playlist_export_relative_paths_title">Beim Exportieren relative Pfade verwenden</string>
   <string name="playlist_export_relative_paths_summary">Dateipfade relativ zur Wiedergabeliste referenzieren</string>
-  <string name="permission_request_summary">Vanilla Music benötigt Leserechte, um Ihre Musikbibliothek anzuzeigen</string>
+  <string name="permission_request_summary">Vanilla Plus benötigt Leserechte, um Ihre Musikbibliothek anzuzeigen</string>
   <string name="reverse_sort">Sortierung umkehren</string>
   <string name="share">Teilen …</string>
   <string name="share_failed">Teilen von Datei gescheitert</string>

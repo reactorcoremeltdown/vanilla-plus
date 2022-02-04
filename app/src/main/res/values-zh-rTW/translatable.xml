@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">確定</string>
   <string name="cancel">取消</string>
   <!--Playback Activity (main screen)-->
@@ -159,7 +159,7 @@
   <string name="replaygain_untagged_debump_title">歌曲無重播增益標記</string>
   <string name="replaygain_untagged_debump_summary">降低音量依據</string>
   <string name="replaygain_preamp_note_title">注解</string>
-  <string name="replaygain_preamp_note_content">Android 不允許 Vanilla Music 提高&gt; 100% 的音量。如果您正在聽 \'安靜\' 的音樂，設定前置放大器為一個較高的值，可能會導致問題。\n\n推薦值是：\n-&gt; -3dB 給寂靜的/古典音樂\n-&gt; +3dB 給 post-2000 的錄音</string>
+  <string name="replaygain_preamp_note_content">Android 不允許 Vanilla Plus 提高&gt; 100% 的音量。如果您正在聽 \'安靜\' 的音樂，設定前置放大器為一個較高的值，可能會導致問題。\n\n推薦值是：\n-&gt; -3dB 給寂靜的/古典音樂\n-&gt; +3dB 給 post-2000 的錄音</string>
   <string name="readahead">啟用預先讀取</string>
   <string name="readahead_summary">預讀目前播放的曲目。此選項可以解決\'音頻落後\'的問題。(因較慢的 SD 卡所造成)</string>
   <string name="equalizer">等化器</string>
@@ -189,7 +189,7 @@
   <string name="disable_lockscreen_title">停用螢幕鎖</string>
   <string name="disable_lockscreen_summary">啟動後，在媒體庫或播放畫面，會阻止螢幕鎖</string>
   <string name="keep_screen_on_title">保持螢幕開啟著</string>
-  <string name="keep_screen_on_summary">當 Vanilla Music 顯現時，保持螢幕(和裝置)開著</string>
+  <string name="keep_screen_on_summary">當 Vanilla Plus 顯現時，保持螢幕(和裝置)開著</string>
   <string name="use_idle_timeout_title">啟用閒置超時</string>
   <string name="use_idle_timeout_summary">當啟動後，在閒置一段時間後會停止播放 </string>
   <string name="idle_timeout_title">閒置超時</string>

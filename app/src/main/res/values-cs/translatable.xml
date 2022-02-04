@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <!--Playback Activity (main screen)-->
   <string name="no_songs">Nenalezeny žádné skladby na tomto přístroji.</string>
   <string name="empty_queue">Žádné vybrané skladby. Vyberte nějaké ze své sbírky, nebo vyberte náhodný mód ťuknutím na tuto zprávu.</string>
@@ -132,7 +132,7 @@
   <string name="replaygain_untagged_debump_title">Skladby bez ReplayGain tagu</string>
   <string name="replaygain_untagged_debump_summary">Ztlumit o</string>
   <string name="replaygain_preamp_note_title">Poznámka</string>
-  <string name="replaygain_preamp_note_content">Android nepovoluje aplikaci Vanilla Music zvýšit hlasitost na &gt;100%. Nastavení Pre-amp na vysokou hodnotu může způsobovat problémy při poslechu \'tiché\' hudby. \n\nDoporučené hodnoty jsou:\n-&gt; -3dB pro tichou/klasickou hudbu\n-&gt; +3dB pro aktuální nahrávky</string>
+  <string name="replaygain_preamp_note_content">Android nepovoluje aplikaci Vanilla Plus zvýšit hlasitost na &gt;100%. Nastavení Pre-amp na vysokou hodnotu může způsobovat problémy při poslechu \'tiché\' hudby. \n\nDoporučené hodnoty jsou:\n-&gt; -3dB pro tichou/klasickou hudbu\n-&gt; +3dB pro aktuální nahrávky</string>
   <string name="readahead">Povolit předčítání</string>
   <string name="readahead_summary">Přednačíst aktuálně hrající skladbu. Tato možnost může vyřešit problémy s vypadáváním audia. (způsobené pomalou SD kartou)</string>
   <string name="equalizer">Ekvalizér</string>
@@ -227,7 +227,7 @@
   <string name="autoplaylist_playcounts_fmt" formatted="false">%s \'Top %.0f\' playlist</string>
   <string name="autoplaylist_playcounts_disabled">Nevytvářet automatický playlist</string>
   <string name="autoplaylist_playcounts_name" formatted="false">Vrchních %d</string>
-  <string name="permission_request_summary">Vanilla Music potřebuje povolení pro čtení k zobrazení hudební knihovny</string>
+  <string name="permission_request_summary">Vanilla Plus potřebuje povolení pro čtení k zobrazení hudební knihovny</string>
   <string name="reverse_sort">Opačné pořadí</string>
   <string name="share">Sdílet...</string>
   <string name="sendto">Odeslat na...</string>

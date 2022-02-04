@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <resources>
-  <string name="app_name">Vanilla Music</string>
+  <string name="app_name">Vanilla Plus</string>
   <string name="ok">확인</string>
   <string name="cancel">취소</string>
   <!--Playback Activity (main screen)-->
@@ -159,7 +159,7 @@
   <string name="replaygain_untagged_debump_title">음량 평준화 태그 없는 곡</string>
   <string name="replaygain_untagged_debump_summary">음량 감소</string>
   <string name="replaygain_preamp_note_title">노트</string>
-  <string name="replaygain_preamp_note_content">안드로이드는 Vanilla Music이 볼륨을 &gt;100%로 올리는것을 허락하지 않습니다. 이러한 문제로 인하여 만일 조용한 음악을 듣는경우 라면  프리엠프 설정을 높은 값으로 설정하십시오. \n\n권장 값 : \n-&gt; -3dB 조용한 클래식 음악\n 2000년 이후의 레코딩은 +3dB</string>
+  <string name="replaygain_preamp_note_content">안드로이드는 Vanilla Plus이 볼륨을 &gt;100%로 올리는것을 허락하지 않습니다. 이러한 문제로 인하여 만일 조용한 음악을 듣는경우 라면  프리엠프 설정을 높은 값으로 설정하십시오. \n\n권장 값 : \n-&gt; -3dB 조용한 클래식 음악\n 2000년 이후의 레코딩은 +3dB</string>
   <string name="readahead">미리 읽기 활성화</string>
   <string name="readahead_summary">현재 재생중인 곡 미리 읽기. 이것은 \'audio dropout\' 문제를 해결할 수 있는 옵션입니다. (느린 SD 카드에서 발생하는)</string>
   <string name="equalizer">이퀄라이져</string>
@@ -189,7 +189,7 @@
   <string name="disable_lockscreen_title">잠금화면 사용 안함</string>
   <string name="disable_lockscreen_summary">재생 중 화면, 라이브러리 일때 잠금화면 방지 </string>
   <string name="keep_screen_on_title">화면에 유지함</string>
-  <string name="keep_screen_on_summary">Vanilla Music 보이는 동안 켜지면 화면(기기)에 유지함</string>
+  <string name="keep_screen_on_summary">Vanilla Plus 보이는 동안 켜지면 화면(기기)에 유지함</string>
   <string name="use_idle_timeout_title">유휴 대기 시간 활성화</string>
   <string name="use_idle_timeout_summary">비활성 시간 후 활성화 시 재생 중지 </string>
   <string name="idle_timeout_title">유휴 시간</string>
@@ -282,7 +282,7 @@
   <string name="playlist_sync_folder_summary">폴더를 재생목록 동기화에 사용함</string>
   <string name="playlist_export_relative_paths_title">상대 경로를 사용하여 내보내기</string>
   <string name="playlist_export_relative_paths_summary">재생 목록과 관련된 참조 파일 경로</string>
-  <string name="permission_request_summary">Vanilla Music은 음악 라이브러리를 표시하기 위하여 읽기 권한이 필요합니다
+  <string name="permission_request_summary">Vanilla Plus은 음악 라이브러리를 표시하기 위하여 읽기 권한이 필요합니다
 </string>
   <string name="reverse_sort">반대로 정렬</string>
   <string name="share">공유...</string>
