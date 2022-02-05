@@ -31,7 +31,7 @@
 		<item name="now_playing_marker">#FF896FBC</item>
 		<item name="controls_normal">@color/material_grey_300</item>
 		<item name="controls_active">#FF896FBC</item>
-		<item name="android:colorAccent">#FF5C038C</item>
+		<item name="android:colorAccent">#FF896FBC</item>
 		<item name="android:colorPrimary">#FF5C038C</item>
 		<item name="android:colorPrimaryDark">#FF420264</item>
 		<item name="themed_letter_tile_colors">@array/letter_tile_colors_dark</item>
