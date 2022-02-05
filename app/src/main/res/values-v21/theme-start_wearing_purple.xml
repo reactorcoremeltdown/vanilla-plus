@@ -28,9 +28,9 @@
 		<item name="float_color">@color/material_grey_300</item>
 		<item name="background_circle_color">#001B1734</item>
 		<item name="tabs_background">#FF5C038C</item>
-		<item name="now_playing_marker">#FF5C038C</item>
+		<item name="now_playing_marker">#FF896FBC</item>
 		<item name="controls_normal">@color/material_grey_300</item>
-		<item name="controls_active">#FF5C038C</item>
+		<item name="controls_active">#FF896FBC</item>
 		<item name="android:colorAccent">#FF5C038C</item>
 		<item name="android:colorPrimary">#FF5C038C</item>
 		<item name="android:colorPrimaryDark">#FF420264</item>
