@@ -37,15 +37,15 @@
 		<item name="themed_letter_tile_colors">@array/letter_tile_colors_dark</item>
 	</style>
 
-	<style name="Start_wearing_purple.Playback" parent="Amoled_dark.VanillaBase">
+	<style name="Start_wearing_purple.Playback" parent="Start_wearing_purple.VanillaBase">
 		<item name="android:actionBarStyle">@style/Universal.PlaybackActionBar</item>
 	</style>
 
-	<style name="Start_wearing_purple.BackActionBar" parent="Amoled_dark.VanillaBase">
+	<style name="Start_wearing_purple.BackActionBar" parent="Start_wearing_purple.VanillaBase">
 		<item name="android:actionBarStyle">@style/Universal.PlaybackActionBar</item>
 	</style>
 
-	<style name="Start_wearing_purple.Library" parent="Amoled_dark.VanillaBase">
+	<style name="Start_wearing_purple.Library" parent="Start_wearing_purple.VanillaBase">
 		<item name="android:windowActionBar">false</item>
 		<item name="android:windowNoTitle">true</item>
 	</style>
