@@ -26,7 +26,7 @@
 		
 		<item name="overlay_foreground_color">@color/overlay_foreground_dark</item>
 		<item name="float_color">@color/material_grey_300</item>
-		<item name="background_circle_color">#FF896FBC</item>
+		<item name="background_circle_color">#FF1B1734</item>
 		<item name="tabs_background">#FF5C038C</item>
 		<item name="now_playing_marker">#FF5C038C</item>
 		<item name="controls_normal">@color/material_grey_300</item>

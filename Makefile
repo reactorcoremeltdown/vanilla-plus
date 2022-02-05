@@ -10,6 +10,7 @@ app: icons
 	podman run -it -v $(shell pwd):/project -v /tmp/gradlecache:"/root/.gradle" mingc/android-build-box bash -c 'cd /project; ./gradlew build'
 
 publish: app
+	rm -fr /var/lib/fdroid/unsigned/*
 	mv app/build/outputs/apk/release/app-release-unsigned.apk /var/lib/fdroid/unsigned/space.rcmd.android.vanillaplus_$(shell grep versionCode app/src/main/AndroidManifest.xml | cut -f 2 -d '"').apk
 	touch /var/lib/fdroid/metadata/space.rcmd.android.vanillaplus.yml
 	cd /var/lib/fdroid && fdroid publish --verbose && fdroid update --verbose
