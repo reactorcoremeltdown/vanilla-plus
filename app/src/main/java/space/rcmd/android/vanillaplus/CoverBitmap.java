@@ -81,7 +81,7 @@ public final class CoverBitmap {
 	{
 		DisplayMetrics metrics = context.getResources().getDisplayMetrics();
 		TEXT_SIZE = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20, metrics);
-		TEXT_SIZE_BIG = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 32, metrics);
+		TEXT_SIZE_BIG = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 24, metrics);
 		PADDING = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 16, metrics);
 		// padding to take actionbar into account.
 		TOP_PADDING = (int)TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 14, metrics);
