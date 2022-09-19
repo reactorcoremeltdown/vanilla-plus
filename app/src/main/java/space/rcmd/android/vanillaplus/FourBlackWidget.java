@@ -91,7 +91,7 @@ public class FourBlackWidget extends AppWidgetProvider {
 		if (!sEnabled)
 			return;
 
-		RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.four_white_widget);
+		RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.four_black_widget);
 
 		if ((state & PlaybackService.FLAG_NO_MEDIA) != 0) {
 			views.setViewVisibility(R.id.play_pause, View.INVISIBLE);
