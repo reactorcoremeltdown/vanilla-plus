@@ -124,7 +124,7 @@ public class FourBlackWidget extends AppWidgetProvider {
 		}
 
 		boolean playing = (state & PlaybackService.FLAG_PLAYING) != 0;
-		views.setImageViewResource(R.id.play_pause, playing ? R.drawable.widget_pause : R.drawable.widget_play);
+		views.setImageViewResource(R.id.play_pause, playing ? R.drawable.pause : R.drawable.play);
 
 		Intent intent;
 		PendingIntent pendingIntent;
