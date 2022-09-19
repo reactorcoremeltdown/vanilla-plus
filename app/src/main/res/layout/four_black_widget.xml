@@ -60,6 +60,7 @@ THE SOFTWARE.
 			android:layout_height="54sp"
 			android:layout_weight="1"
 			android:orientation="vertical"
+			android:paddingTop="5dp"
 			android:paddingLeft="8dp"
 			android:paddingRight="8dp" >
 			<TextView
