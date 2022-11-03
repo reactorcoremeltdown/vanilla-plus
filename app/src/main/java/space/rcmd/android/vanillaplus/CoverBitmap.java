@@ -360,6 +360,7 @@ public final class CoverBitmap {
 	 */
 	public static Bitmap generateDefaultCover(Context context, int width, int height)
 	{
+		/*
 		int size = Math.min(width, height);
 
 		int[] colors = ThemeHelper.getDefaultCoverColors(context);
@@ -394,6 +395,9 @@ public final class CoverBitmap {
 		int hdiff = tpos - (line_thickness/2); // shift this up by half of the thickness to have the circle radius touch the top of the vertical line
 		canvas.drawRoundRect(new RectF(lpos, hdiff, lpos+line_horizontal, hdiff+line_thickness), line_thickness, line_thickness, paint);
 
+		*/
+
+		Bitmap bitmap = BitmapFactory.decodeResource(context.getResources(),R.drawable.cover_placeholder);
 		return bitmap;
 	}
 
