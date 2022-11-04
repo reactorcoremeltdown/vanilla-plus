@@ -231,6 +231,7 @@ public class PreferencesMediaLibrary extends Fragment implements View.OnClickLis
 			// Sending an 'OUTDATED' event signals that our playlist information is wrong.
 			// This should trigger a full re-import.
 			MediaLibrary.notifyObserver(LibraryObserver.Type.PLAYLIST, LibraryObserver.Value.OUTDATED, false);
+			MediaLibrary.notifyObserver(LibraryObserver.Type.PLAYLIST, LibraryObserver.Value.UNKNOWN, false);
 			break;
 		default:
 			return super.onOptionsItemSelected(item);
