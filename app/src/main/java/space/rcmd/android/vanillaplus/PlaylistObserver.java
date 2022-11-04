@@ -49,7 +49,7 @@ public class PlaylistObserver extends SQLiteOpenHelper implements Handler.Callba
 	/**
 	 * Whether or not to write debug logs.
 	 */
-	private static final boolean DEBUG = false;
+	private static final boolean DEBUG = true;
 	/**
 	 * Bits for mSyncMode
 	 */
