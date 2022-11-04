@@ -105,7 +105,7 @@ public class MediaScanner implements Handler.Callback {
 		HandlerThread handlerThread = new HandlerThread("MediaScannerThread", Process.THREAD_PRIORITY_LOWEST);
 		handlerThread.start();
 		mHandler = new Handler(handlerThread.getLooper(), this);
-		mWakeLock = ((PowerManager)context.getSystemService(Context.POWER_SERVICE)).newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "VanillaMusicIndexerLock");
+		mWakeLock = ((PowerManager)context.getSystemService(Context.POWER_SERVICE)).newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "VanillaPlusIndexerLock");
 		mNotificationHelper = new NotificationHelper(context, NOTIFICATION_CHANNEL, context.getString(R.string.media_stats_progress));
 
 		// the content observer to use
@@ -288,7 +288,7 @@ public class MediaScanner implements Handler.Callback {
 			if (step == null) {
 				mHandler.sendEmptyMessage(MSG_SCAN_FINISHED);
 			} else {
-				Log.v("VanillaMusic", "xxx --- starting scan of type "+step.msg);
+				Log.v("VanillaPlus", "xxx --- starting scan of type "+step.msg);
 				mHandler.sendMessage(mHandler.obtainMessage(MSG_SCAN_RPC, step.msg, 0, step.arg));
 			}
 		}
@@ -354,7 +354,7 @@ public class MediaScanner implements Handler.Callback {
 		try {
 			cursor = mContext.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, projection, selection, null, null);
 		} catch (SecurityException e) {
-			Log.e("VanillaMusic", "rpcObserveRemoval query failed: "+e);
+			Log.e("VanillaPlus", "rpcObserveRemoval query failed: "+e);
 		}
 
 		if (cursor == null)
@@ -395,7 +395,7 @@ public class MediaScanner implements Handler.Callback {
 			try {
 				cursor = mContext.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, projection, selection, null, sort);
 			} catch(SecurityException e) {
-				Log.e("VanillaMusic", "rpcNativeVerify failed: "+e);
+				Log.e("VanillaPlus", "rpcNativeVerify failed: "+e);
 			}
 		}
 
@@ -413,7 +413,7 @@ public class MediaScanner implements Handler.Callback {
 		} else {
 			cursor.close();
 			setNativeLastMtime(mtime);
-			Log.v("VanillaMusic", "NativeLibraryScanner finished, mtime mark is now at "+mtime);
+			Log.v("VanillaPlus", "NativeLibraryScanner finished, mtime mark is now at "+mtime);
 		}
 	}
 
@@ -655,7 +655,7 @@ public class MediaScanner implements Handler.Callback {
 			}
 		} // end if (mustInsert)
 
-		Log.v("VanillaMusic", "MediaScanner: inserted "+path);
+		Log.v("VanillaPlus", "MediaScanner: inserted "+path);
 		return hasChanged;
 	}
 

@@ -7,7 +7,7 @@ LOCAL_SRC_FILES := \
 
 LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
-LOCAL_PACKAGE_NAME := VanillaMusic
+LOCAL_PACKAGE_NAME := VanillaPlus
 
 LOCAL_AAPT_FLAGS := \
     --auto-add-overlay

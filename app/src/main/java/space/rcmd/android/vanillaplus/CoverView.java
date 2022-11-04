@@ -489,7 +489,7 @@ public final class CoverView extends View implements Handler.Callback {
 	}
 
 	private void DEBUG(String s) {
-		// Log.v("VanillaMusicCover", s);
+		// Log.v("VanillaPlusCover", s);
 	}
 
 

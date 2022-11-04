@@ -351,7 +351,7 @@ public class PlaylistObserver extends SQLiteOpenHelper implements Handler.Callba
 				}
 				updatePlaylistMetadata(import_id, import_as, hash);
 			} catch(IOException e) {
-				Log.e("VanillaMusic", "Error while parsing m3u: "+e);
+				Log.e("VanillaPlus", "Error while parsing m3u: "+e);
 			}
 			MediaLibrary.registerLibraryObserver(mLibraryObserver);
 		}
@@ -396,7 +396,7 @@ public class PlaylistObserver extends SQLiteOpenHelper implements Handler.Callba
 				updatePlaylistMetadata(id, name, hash_new);
 			}
 		} catch (IOException e) {
-			Log.v("VanillaMusic", "IOException while writing:", e);
+			Log.v("VanillaPlus", "IOException while writing:", e);
 		} finally {
 			if (cursor != null) cursor.close();
 			if (pw != null) pw.close();
@@ -656,7 +656,7 @@ public class PlaylistObserver extends SQLiteOpenHelper implements Handler.Callba
 		if (DEBUG) {
 			try(PrintWriter pw = new PrintWriter(new FileOutputStream(new File("/sdcard/playlist-observer.txt"), true))) {
 				pw.println(System.currentTimeMillis()/1000+": "+s);
-				Log.v("VanillaMusic", "XTRACE: "+s);
+				Log.v("VanillaPlus", "XTRACE: "+s);
 			} catch(Exception e) {}
 		}
 	}

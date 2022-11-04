@@ -291,7 +291,7 @@ public class MediaMetadataExtractor extends HashMap<String, ArrayList<String>> {
 		if (!isEmpty())
 			throw new IllegalStateException("Expected to be called on a clean HashMap");
 
-		Log.v("VanillaMusic", "Extracting tags from "+path);
+		Log.v("VanillaPlus", "Extracting tags from "+path);
 
 		HashMap bastpTags = (new Bastp()).getTags(path);
 		MediaMetadataRetriever mediaTags = new MediaMetadataRetriever();
@@ -303,12 +303,12 @@ public class MediaMetadataExtractor extends HashMap<String, ArrayList<String>> {
 				mediaTags.setDataSource(fis.getFD());
 				nativelyReadable = true;
 			} catch (Exception e) {
-				Log.v("VanillaMusic", "Error calling setDataSource for "+path+": "+e);
+				Log.v("VanillaPlus", "Error calling setDataSource for "+path+": "+e);
 			}
 			fis.close();
 		} catch (Exception e) {
 			nativelyReadable = false;
-			Log.v("VanillaMusic", "Error creating fis for "+path+": "+e);
+			Log.v("VanillaPlus", "Error creating fis for "+path+": "+e);
 		}
 
 		// Check if this is a usable audio file

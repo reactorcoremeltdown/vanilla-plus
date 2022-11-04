@@ -490,7 +490,7 @@ public final class PlaybackService extends Service
 		mAutoPlPlaycounts = settings.getInt(PrefKeys.AUTOPLAYLIST_PLAYCOUNTS, PrefDefaults.AUTOPLAYLIST_PLAYCOUNTS);
 
 		PowerManager powerManager = (PowerManager)getSystemService(POWER_SERVICE);
-		mWakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "VanillaMusicLock");
+		mWakeLock = powerManager.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, "VanillaPlusLock");
 
 		mReceiver = new Receiver();
 		IntentFilter filter = new IntentFilter();
@@ -814,7 +814,7 @@ public final class PlaybackService extends Service
 			doGapless = true;
 		}
 		else {
-			Log.d("VanillaMusic", "Must not create new media player object");
+			Log.d("VanillaPlus", "Must not create new media player object");
 		}
 
 		if(doGapless == true) {
@@ -832,7 +832,7 @@ public final class PlaybackService extends Service
 					mMediaPlayer.setNextMediaPlayer(mPreparedMediaPlayer);
 				}
 			} catch (IOException | IllegalArgumentException e) {
-				Log.e("VanillaMusic", "Exception while preparing gapless media player: " + e);
+				Log.e("VanillaPlus", "Exception while preparing gapless media player: " + e);
 				mMediaPlayer.setNextMediaPlayer(null);
 				mPreparedMediaPlayer.reset();
 			}
@@ -986,7 +986,7 @@ public final class PlaybackService extends Service
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
 			AudioDeviceInfo[] devices = mAudioManager.getDevices(AudioManager.GET_DEVICES_OUTPUTS);
 			for (AudioDeviceInfo device: devices) {
-				Log.v("VanillaMusic", "AudioDeviceInfo type = " + device.getType());
+				Log.v("VanillaPlus", "AudioDeviceInfo type = " + device.getType());
 				if (Arrays.asList(headsetTypes).contains(device.getType())) {
 					result = false;
 					break;
@@ -1411,7 +1411,7 @@ public final class PlaybackService extends Service
 			mErrorMessage = getResources().getString(R.string.song_load_failed, song.path);
 			updateState(mState | FLAG_ERROR);
 			showToast(mErrorMessage, Toast.LENGTH_LONG);
-			Log.e("VanillaMusic", "IOException", e);
+			Log.e("VanillaPlus", "IOException", e);
 
 			/* Automatically advance to next song IF we are currently playing or already did skip something
 			 * This will stop after skipping 10 songs to avoid endless loops (queue full of broken stuff */
@@ -1449,7 +1449,7 @@ public final class PlaybackService extends Service
 	@Override
 	public boolean onError(MediaPlayer player, int what, int extra)
 	{
-		Log.e("VanillaMusic", "MediaPlayer error: " + what + ' ' + extra);
+		Log.e("VanillaPlus", "MediaPlayer error: " + what + ' ' + extra);
 
 		return true;
 	}
@@ -2027,9 +2027,9 @@ public final class PlaybackService extends Service
 
 			in.close();
 		} catch (EOFException e) {
-			Log.w("VanillaMusic", "Failed to load state", e);
+			Log.w("VanillaPlus", "Failed to load state", e);
 		} catch (IOException e) {
-			Log.w("VanillaMusic", "Failed to load state", e);
+			Log.w("VanillaPlus", "Failed to load state", e);
 		}
 
 		return state;
@@ -2053,7 +2053,7 @@ public final class PlaybackService extends Service
 			mTimeline.writeState(out);
 			out.close();
 		} catch (IOException e) {
-			Log.w("VanillaMusic", "Failed to save state", e);
+			Log.w("VanillaPlus", "Failed to save state", e);
 		}
 	}
 
@@ -2097,7 +2097,7 @@ public final class PlaybackService extends Service
 			return PendingIntent.getActivity(this, 0, intent, 0);
 		}
 		default:
-			Log.w("VanillaMusic", "Unknown value for notification_action. Defaulting to 0.");
+			Log.w("VanillaPlus", "Unknown value for notification_action. Defaulting to 0.");
 			// fall through
 		case NOT_ACTION_MAIN_ACTIVITY: {
 			Intent intent = new Intent(this, LibraryActivity.class);
@@ -2162,7 +2162,7 @@ public final class PlaybackService extends Service
 
 	public void onAudioFocusChange(int type)
 	{
-		Log.d("VanillaMusic", "audio focus change: " + type);
+		Log.d("VanillaPlus", "audio focus change: " + type);
 
 		// Rewrite permanent focus loss into can_duck
 		if (mIgnoreAudioFocusLoss) {
