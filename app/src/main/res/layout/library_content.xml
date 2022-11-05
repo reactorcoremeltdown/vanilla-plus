@@ -43,6 +43,7 @@ THE SOFTWARE.
 			android:id="@+id/limiter_scroller"
 			android:layout_width="fill_parent"
 			android:layout_height="wrap_content"
+			android:scrollbarSize="100dip"
 			android:layout_gravity="bottom|left">
 			<LinearLayout
 				android:id="@+id/limiter_layout"
