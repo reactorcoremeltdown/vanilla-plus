@@ -2138,6 +2138,7 @@ public final class PlaybackService extends Service
 			.setStyle(new androidx.media.app.NotificationCompat.MediaStyle()
 					  .setMediaSession(mMediaSessionTracker.getSessionToken())
 					  .setShowActionsInCompactView(0, 1, 2))
+			.setForegroundServiceBehavior(NotificationCompat.FOREGROUND_SERVICE_IMMEDIATE)
 			.build();
 		return n;
 	}
