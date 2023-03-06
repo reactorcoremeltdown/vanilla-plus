@@ -181,7 +181,7 @@ THE SOFTWARE.
 		</receiver>
 		<service android:name="PlaybackService"
 			 android:foregroundServiceType="mediaPlayback"
-			 android:exported="false">
+			 android:exported="true">
 			<intent-filter>
 				<action android:name="space.rcmd.android.vanillaplus.action.PLAY" />
 				<action android:name="space.rcmd.android.vanillaplus.action.PAUSE" />
