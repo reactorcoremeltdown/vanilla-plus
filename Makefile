@@ -13,4 +13,7 @@ publish: app
 	rm -fr /var/lib/fdroid/unsigned/*
 	mv app/build/outputs/apk/release/app-release-unsigned.apk /var/lib/fdroid/unsigned/space.rcmd.android.vanillaplus_$(shell grep versionCode app/src/main/AndroidManifest.xml | cut -f 2 -d '"').apk
 	touch /var/lib/fdroid/metadata/space.rcmd.android.vanillaplus.yml
-	cd /var/lib/fdroid && fdroid publish --verbose && fdroid update --verbose
+	cd /var/lib/fdroid && \
+		/opt/fdroidserver/fdroid publish --verbose && \
+		/opt/fdroidserver/fdroid update --verbose && \
+		/opt/fdroidserver/fdroid server update --verbose
