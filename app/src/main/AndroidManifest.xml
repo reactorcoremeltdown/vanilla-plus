@@ -131,7 +131,8 @@ THE SOFTWARE.
 		</receiver>
 		<receiver
 			android:name=".FourBlackWidget"
-			android:label="Vanilla Plus 4x1 Black">
+			android:label="Vanilla Plus 4x1 Black"
+			android:exported="false">
 			<intent-filter>
 				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
 			</intent-filter>
