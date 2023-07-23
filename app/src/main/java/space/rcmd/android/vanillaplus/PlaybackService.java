@@ -1584,6 +1584,7 @@ public final class PlaybackService extends Service
 		case MSG_BROADCAST_CHANGE:
 			TimestampedObject tso = (TimestampedObject)message.obj;
 			broadcastChange(message.arg1, (Song)tso.object, tso.uptime);
+			mMediaSessionTracker.updateSession(mCurrentSong, mState);
 			break;
 		case MSG_ENTER_SLEEP_STATE:
 			enterSleepState();
