@@ -16,4 +16,4 @@ publish: app
 	cd /var/lib/fdroid && \
 		/opt/fdroidserver/fdroid publish --verbose && \
 		/opt/fdroidserver/fdroid update --verbose && \
-		/opt/fdroidserver/fdroid server update --verbose
+		/opt/fdroidserver/fdroid deploy --verbose
