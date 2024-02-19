@@ -1,6 +1,33 @@
 ---
 kind: pipeline
 type: exec
+name: hetzner-api-init
+
+
+platform:
+  os: linux
+  arch: amd64
+
+clone:
+  disable: true
+
+steps:
+- name: query
+  commands:
+    - |
+      curl -s -o /dev/null -w "%{http_code}" -H "Authorization: Bearer $HETZNER_API_TOKEN" -H 'Content-Type: application/json' -d "{\"image\":\"debian-12\",\"name\":\"builder\",\"server_type\":\"cpx41\",\"ssh_keys\":[\"wfmacbook-v3\"],\"start_after_create\":true, \"user_data\":\"#cloud-config\\\\nruncmd:\\\\n- [bash, -c, apt-get -y update && apt-get -y install git jq bash make && mkdir -p /etc/secrets && echo $ENCODED_SECRETS | base64 -d > /etc/secrets/secrets.json && git clone https://github.com/reactorcoremeltdown/dustbag.git /root/dustbag && cd /root/dustbag && make builder]\\\\n\"}" 'https://api.hetzner.cloud/v1/servers'
+  environment:
+    HETZNER_API_TOKEN:
+      from_secret: hetzner_api_token
+    ENCODED_SECRETS:
+      from_secret: encoded_secrets
+
+node:
+  role: production
+
+---
+kind: pipeline
+type: exec
 name: default
 
 platform:
@@ -13,17 +40,35 @@ clone:
 steps:
 - name: clone
   commands:
+  - echo $PRIVATE_SSH_KEY | base64 -d > /home/git/.ssh/id_rsa
+  - echo $PUBLIC_SSH_KEY > /home/git/.ssh/id_rsa.pub
+  - echo $HETZNER_API_TOKEN > /home/git/.hetzner
+  - ssh-keyscan git.rcmd.space >> /home/git/.ssh/known_hosts
   - git clone $DRONE_GIT_SSH_URL
+  environment:
+    HETZNER_API_TOKEN:
+      from_secret: hetzner_api_token
+    PUBLIC_SSH_KEY:
+      from_secret: public_ssh_key
+    PRIVATE_SSH_KEY:
+      from_secret: private_ssh_key
 - name: build
   commands:
+  - sudo /usr/local/bin/seppuku delay
   - cd $DRONE_REPO_NAME && echo $GIT_SUDO | sudo -S make
+  - curl -i --progress-bar -u rcmd:$WEBDAV_PASSWORD -T ./app/build/outputs/apk/release/app-release-unsigned.apk https://webdav.rcmd.space/Backups/
+  - sudo /usr/local/bin/seppuku cooldown
   environment:
     GIT_SUDO:
       from_secret: git_sudo
+    WEBDAV_PASSWORD:
+      from_secret: WEBDAV_PASSWORD
 
 node:
-  machine: hangar.rcmd.space
+  role: builder
 
+depends_on:
+- hetzner-api-init
 ---
 kind: pipeline
 type: exec
@@ -47,7 +92,6 @@ trigger:
   - failure
 
 node:
-  machine: hangar.rcmd.space
-
+  role: production
 depends_on:
 - default

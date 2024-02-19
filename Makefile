@@ -1,4 +1,4 @@
-all: publish
+all: app
 
 icons:
 	git log --name-status -1 HEAD | grep -o 'orig/' && podman run -it -v $(shell pwd):/var/storage repo.rcmd.space/inkscape-ci:latest /var/storage/generate-pngs.sh || true
