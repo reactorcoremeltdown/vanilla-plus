@@ -57,6 +57,7 @@ steps:
   - sudo /usr/local/bin/seppuku delay
   - cd $DRONE_REPO_NAME && echo $GIT_SUDO | sudo -S make
   - curl -i --progress-bar -u rcmd:$WEBDAV_PASSWORD -T ./app/build/outputs/apk/release/app-release-unsigned.apk https://webdav.rcmd.space/Backups/
+  - curl -i --progress-bar -u rcmd:$WEBDAV_PASSWORD -T ./app/build/outputs/apk/debug/app-debug.apk https://webdav.rcmd.space/Backups/
   - sudo /usr/local/bin/seppuku cooldown
   environment:
     GIT_SUDO:
