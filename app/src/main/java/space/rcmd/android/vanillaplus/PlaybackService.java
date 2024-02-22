@@ -526,7 +526,6 @@ public final class PlaybackService extends Service
 		synchronized (sWait) {
 			sWait.notifyAll();
 		}
-Trying to write a header if file is empty
 		mAccelFiltered = 0.0f;
 		mAccelLast = SensorManager.GRAVITY_EARTH;
 		setupSensor();
