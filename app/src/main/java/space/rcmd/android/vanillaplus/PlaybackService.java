@@ -1183,7 +1183,7 @@ public final class PlaybackService extends Service
 
 	private void scrobbleLog() {
 		Song song = mCurrentSong;
-		File root = Environment.getExternalStorageDirectory();
+		File root = context.getFilesDir();
 		File outDir = new File(root.getAbsolutePath() + File.separator + "audioscrobbler");
 		String fileName = "scrobbler.log";
 		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus";
@@ -1204,12 +1204,12 @@ public final class PlaybackService extends Service
 					"Unable to create directory audioscrobbler. Maybe the SD card is mounted?");
 			}
 			File outputFile = new File(outDir, fileName);
-			writer = new BufferedWriter(new FileWriter(outputFile));
+			FileOutputStream stream = new FileOutputStream(outputFile);
 			if (!outputFile.isFile()) {
-				writer.write(header);
+				stream.write(header.getBytes());
 			}
-			writer.write(data);
-			writer.close();
+			stream.write(data.getBytes());
+			stream.close();
 		} catch (IOException e) {
 			Log.w("audioscrobbler", e.getMessage(), e);
 		}
