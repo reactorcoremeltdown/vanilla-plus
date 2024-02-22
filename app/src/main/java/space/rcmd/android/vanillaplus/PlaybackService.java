@@ -1187,7 +1187,7 @@ public final class PlaybackService extends Service
 		String fileName = "scrobbler.log";
 		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus\n";
 		long unixTime = System.currentTimeMillis() / 1000L;
-		int position = getPosition() / 1000
+		int position = getPosition() / 1000;
 		String data = song.artist + "\t" +
 			song.album + "\t" +
 			song.title + "\t" +
