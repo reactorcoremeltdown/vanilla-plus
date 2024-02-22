@@ -2137,11 +2137,11 @@ public final class PlaybackService extends Service
 			.setContentText(song.album)
 			.setSubText(song.artist)
 			.setContentIntent(mNotificationAction)
-			.addAction(new NotificationCompat.Action(R.drawable.previous,
+			.addAction(new NotificationCompat.Action(R.drawable.simple_previous,
 													 getString(R.string.previous_song), PendingIntent.getService(this, 0, previous, PendingIntent.FLAG_IMMUTABLE|PendingIntent.FLAG_UPDATE_CURRENT)))
 			.addAction(new NotificationCompat.Action(playButton,
 													 getString(R.string.play_pause), PendingIntent.getService(this, 0, playPause, PendingIntent.FLAG_IMMUTABLE|PendingIntent.FLAG_UPDATE_CURRENT)))
-			.addAction(new NotificationCompat.Action(R.drawable.next,
+			.addAction(new NotificationCompat.Action(R.drawable.simple_next,
 													 getString(R.string.next_song), PendingIntent.getService(this, 0, next, PendingIntent.FLAG_IMMUTABLE|PendingIntent.FLAG_UPDATE_CURRENT)))
 			.setStyle(new androidx.media.app.NotificationCompat.MediaStyle()
 					  .setMediaSession(mMediaSessionTracker.getSessionToken())

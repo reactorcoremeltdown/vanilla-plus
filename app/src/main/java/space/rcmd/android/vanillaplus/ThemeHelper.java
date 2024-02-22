@@ -70,7 +70,7 @@ public class ThemeHelper {
 	 */
 	final public static int getPlayButtonResource(boolean playing)
 	{
-		return playing ? R.drawable.widget_pause : R.drawable.widget_play;
+		return playing ? R.drawable.simple_pause : R.drawable.simple_play;
 	}
 
 	/**
