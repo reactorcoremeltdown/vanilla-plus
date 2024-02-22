@@ -1205,7 +1205,7 @@ public final class PlaybackService extends Service
 			}
 			File outputFile = new File(outDir, fileName);
 			FileOutputStream stream = new FileOutputStream(outputFile, true);
-			if (!outputFile.isFile()) {
+			if (outputFile.length() == 0L) {
 				stream.write(header.getBytes());
 			}
 			stream.write(data.getBytes());
