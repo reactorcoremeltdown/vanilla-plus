@@ -66,11 +66,10 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.ArrayList;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 
 
 /**
@@ -1182,6 +1181,7 @@ public final class PlaybackService extends Service
 	}
 
 	private void scrobbleLog() {
+		Context context = getApplicationContext();
 		Song song = mCurrentSong;
 		File root = context.getFilesDir();
 		File outDir = new File(root.getAbsolutePath() + File.separator + "audioscrobbler");
@@ -1215,13 +1215,12 @@ public final class PlaybackService extends Service
 		}
 	}
 
-private void updateNotification()
-{
-if (mCurrentSong != null) {
-	// We always update the notification, even if we are about to cancel it as it may still stick around
-	// for a few seconds and we want to ensure that we are showing the correct state.
-	mNotificationHelper.notify(NOTIFICATION_ID, createNotification(mCurrentSong, mState));
-}
+	private void updateNotification() {
+		if (mCurrentSong != null) {
+			// We always update the notification, even if we are about to cancel it as it may still stick around
+			// for a few seconds and we want to ensure that we are showing the correct state.
+			mNotificationHelper.notify(NOTIFICATION_ID, createNotification(mCurrentSong, mState));
+		}
 		if (!(mForceNotificationVisible ||
 			 mNotificationVisibility == VISIBILITY_ALWAYS ||
 			 mNotificationVisibility == VISIBILITY_WHEN_PLAYING && (mState & FLAG_PLAYING) != 0)) {
