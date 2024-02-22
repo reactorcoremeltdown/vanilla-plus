@@ -1187,6 +1187,7 @@ public final class PlaybackService extends Service
 		String fileName = "scrobbler.log";
 		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus\n";
 		long unixTime = System.currentTimeMillis() / 1000L;
+		int position = getPosition() / 1000
 		String data = song.artist + "\t" +
 			song.album + "\t" +
 			song.title + "\t" +
@@ -1208,7 +1209,9 @@ public final class PlaybackService extends Service
 				stream.write(header.getBytes());
 			}
 			if ((mState & FLAG_PLAYING) != 0) {
-				stream.write(data.getBytes());
+				if (position < 5) {
+					stream.write(data.getBytes());
+				}
 			}
 			stream.close();
 		} catch (IOException e) {
