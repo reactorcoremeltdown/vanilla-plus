@@ -48,6 +48,7 @@ import android.media.AudioDeviceInfo;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Build;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.IBinder;
@@ -260,13 +261,13 @@ public final class PlaybackService extends Service
 	 *
 	 * The format of this is 0b00000000_00000000_000000gff_feeedcba,
 	 * where each bit is:
-	 *     a:   {@link PlaybackService#FLAG_PLAYING}
-	 *     b:   {@link PlaybackService#FLAG_NO_MEDIA}
-	 *     c:   {@link PlaybackService#FLAG_ERROR}
-	 *     d:   {@link PlaybackService#FLAG_EMPTY_QUEUE}
-	 *     eee: {@link PlaybackService#MASK_FINISH}
-	 *     fff: {@link PlaybackService#MASK_SHUFFLE}
-	 *     g:   {@link PlaybackService#FLAG_DUCKING}
+	 *	   a:	{@link PlaybackService#FLAG_PLAYING}
+	 *	   b:	{@link PlaybackService#FLAG_NO_MEDIA}
+	 *	   c:	{@link PlaybackService#FLAG_ERROR}
+	 *	   d:	{@link PlaybackService#FLAG_EMPTY_QUEUE}
+	 *	   eee: {@link PlaybackService#MASK_FINISH}
+	 *	   fff: {@link PlaybackService#MASK_SHUFFLE}
+	 *	   g:	{@link PlaybackService#FLAG_DUCKING}
 	 */
 	int mState;
 
@@ -467,8 +468,8 @@ public final class PlaybackService extends Service
 
 		CoverCache.mCoverLoadMode = settings.getBoolean(PrefKeys.COVERLOADER_ANDROID, PrefDefaults.COVERLOADER_ANDROID) ? CoverCache.mCoverLoadMode | CoverCache.COVER_MODE_ANDROID : CoverCache.mCoverLoadMode & ~(CoverCache.COVER_MODE_ANDROID);
 		CoverCache.mCoverLoadMode = settings.getBoolean(PrefKeys.COVERLOADER_VANILLA, PrefDefaults.COVERLOADER_VANILLA) ? CoverCache.mCoverLoadMode | CoverCache.COVER_MODE_VANILLA : CoverCache.mCoverLoadMode & ~(CoverCache.COVER_MODE_VANILLA);
-		CoverCache.mCoverLoadMode = settings.getBoolean(PrefKeys.COVERLOADER_SHADOW , PrefDefaults.COVERLOADER_SHADOW)  ? CoverCache.mCoverLoadMode | CoverCache.COVER_MODE_SHADOW  : CoverCache.mCoverLoadMode & ~(CoverCache.COVER_MODE_SHADOW);
-		CoverCache.mCoverLoadMode = settings.getBoolean(PrefKeys.COVERLOADER_INLINE , PrefDefaults.COVERLOADER_INLINE)  ? CoverCache.mCoverLoadMode | CoverCache.COVER_MODE_INLINE  : CoverCache.mCoverLoadMode & ~(CoverCache.COVER_MODE_INLINE);
+		CoverCache.mCoverLoadMode = settings.getBoolean(PrefKeys.COVERLOADER_SHADOW , PrefDefaults.COVERLOADER_SHADOW)	? CoverCache.mCoverLoadMode | CoverCache.COVER_MODE_SHADOW	: CoverCache.mCoverLoadMode & ~(CoverCache.COVER_MODE_SHADOW);
+		CoverCache.mCoverLoadMode = settings.getBoolean(PrefKeys.COVERLOADER_INLINE , PrefDefaults.COVERLOADER_INLINE)	? CoverCache.mCoverLoadMode | CoverCache.COVER_MODE_INLINE	: CoverCache.mCoverLoadMode & ~(CoverCache.COVER_MODE_INLINE);
 
 		mHeadsetOnly = settings.getBoolean(PrefKeys.HEADSET_ONLY, PrefDefaults.HEADSET_ONLY);
 		mStockBroadcast = settings.getBoolean(PrefKeys.STOCK_BROADCAST, PrefDefaults.STOCK_BROADCAST);
@@ -976,8 +977,8 @@ public final class PlaybackService extends Service
 	{
 		// Devices we consider to not be speakers.
 		final Integer[] headsetTypes = { AudioDeviceInfo.TYPE_BLUETOOTH_A2DP, AudioDeviceInfo.TYPE_BLUETOOTH_SCO,
-		                                 AudioDeviceInfo.TYPE_WIRED_HEADSET, AudioDeviceInfo.TYPE_WIRED_HEADPHONES,
-		                                 AudioDeviceInfo.TYPE_USB_HEADSET, AudioDeviceInfo.TYPE_USB_DEVICE };
+										 AudioDeviceInfo.TYPE_WIRED_HEADSET, AudioDeviceInfo.TYPE_WIRED_HEADPHONES,
+										 AudioDeviceInfo.TYPE_USB_HEADSET, AudioDeviceInfo.TYPE_USB_DEVICE };
 
 		boolean result = true;
 		AudioDeviceInfo[] devices = mAudioManager.getDevices(AudioManager.GET_DEVICES_OUTPUTS);
@@ -1166,6 +1167,7 @@ public final class PlaybackService extends Service
 				intent.putExtra("albumid", androidIds[1]);
 			}
 			sendBroadcast(intent);
+			scrobbleLog();
 		}
 
 		if (mScrobble) {
@@ -1177,13 +1179,47 @@ public final class PlaybackService extends Service
 		}
 	}
 
-	private void updateNotification()
-	{
-		if (mCurrentSong != null) {
-			// We always update the notification, even if we are about to cancel it as it may still stick around
-			// for a few seconds and we want to ensure that we are showing the correct state.
-			mNotificationHelper.notify(NOTIFICATION_ID, createNotification(mCurrentSong, mState));
+	private void scrobbleLog() {
+		Song song = mCurrentSong;
+		File root = Environment.getExternalStorageDirectory();
+		File outDir = new File(root.getAbsolutePath() + File.separator + "audioscrobbler");
+		String fileName = "scrobbler.log";
+		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus"
+		long unixTime = System.currentTimeMillis() / 1000L;
+		String data = song.artist + "\t" +
+			song.album + "\t" +
+			song.title + "\t" +
+			song.trackNumber.toString() + "\t" +
+			song.duration.toString() + "\tL\t" +
+			unixTime.toString();
+
+		if (!outDir.isDirectory()) {
+			outDir.mkdir();
 		}
+		try {
+			if (!outDir.isDirectory()) {
+				throw new IOException(
+					"Unable to create directory audioscrobbler. Maybe the SD card is mounted?");
+			}
+			File outputFile = new File(outDir, fileName);
+			writer = new BufferedWriter(new FileWriter(outputFile));
+			if (!outputFile.isFile()) {
+				writer.write(header);
+			}
+			writer.write(data);
+			writer.close();
+		} catch (IOException e) {
+			Log.w("audioscrobbler", e.getMessage(), e);
+		}
+	}
+
+private void updateNotification()
+{
+if (mCurrentSong != null) {
+	// We always update the notification, even if we are about to cancel it as it may still stick around
+	// for a few seconds and we want to ensure that we are showing the correct state.
+	mNotificationHelper.notify(NOTIFICATION_ID, createNotification(mCurrentSong, mState));
+}
 		if (!(mForceNotificationVisible ||
 			 mNotificationVisibility == VISIBILITY_ALWAYS ||
 			 mNotificationVisibility == VISIBILITY_WHEN_PLAYING && (mState & FLAG_PLAYING) != 0)) {
@@ -1594,7 +1630,7 @@ public final class PlaybackService extends Service
 			 * But we are restoring the Playing state in ANY case as we are most
 			 * likely still stopped due to the error
 			 * Note: This is somewhat racy with user input but also is the - by far - simplest
-			 *       solution */
+			 *		 solution */
 			if(getTimelinePosition() == message.arg1) {
 				setCurrentSong(1);
 			}
