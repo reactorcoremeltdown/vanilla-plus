@@ -1186,14 +1186,14 @@ public final class PlaybackService extends Service
 		File root = context.getExternalFilesDir(null);
 		File outDir = new File(root.getAbsolutePath() + File.separator + "audioscrobbler");
 		String fileName = "scrobbler.log";
-		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus";
+		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus\n";
 		long unixTime = System.currentTimeMillis() / 1000L;
 		String data = song.artist + "\t" +
 			song.album + "\t" +
 			song.title + "\t" +
 			Integer.toString(song.trackNumber) + "\t" +
-			Long.toString(song.duration) + "\tL\t" +
-			Long.toString(unixTime);
+			Long.toString(song.duration / 1000L) + "\tL\t" +
+			Long.toString(unixTime) + '\n';
 
 		if (!outDir.isDirectory()) {
 			outDir.mkdir();
@@ -1204,7 +1204,7 @@ public final class PlaybackService extends Service
 					"Unable to create directory audioscrobbler. Maybe the SD card is mounted?");
 			}
 			File outputFile = new File(outDir, fileName);
-			FileOutputStream stream = new FileOutputStream(outputFile);
+			FileOutputStream stream = new FileOutputStream(outputFile, true);
 			if (!outputFile.isFile()) {
 				stream.write(header.getBytes());
 			}
