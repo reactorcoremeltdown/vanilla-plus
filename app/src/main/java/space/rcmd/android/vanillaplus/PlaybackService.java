@@ -1183,7 +1183,7 @@ public final class PlaybackService extends Service
 	private void scrobbleLog() {
 		Context context = getApplicationContext();
 		Song song = mCurrentSong;
-		File root = context.getFilesDir();
+		File root = context.getExternalFilesDir(null);
 		File outDir = new File(root.getAbsolutePath() + File.separator + "audioscrobbler");
 		String fileName = "scrobbler.log";
 		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus";
