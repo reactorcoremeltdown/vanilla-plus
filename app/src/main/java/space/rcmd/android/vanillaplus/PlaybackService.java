@@ -526,7 +526,7 @@ public final class PlaybackService extends Service
 		synchronized (sWait) {
 			sWait.notifyAll();
 		}
-
+Trying to write a header if file is empty
 		mAccelFiltered = 0.0f;
 		mAccelLast = SensorManager.GRAVITY_EARTH;
 		setupSensor();
@@ -1208,7 +1208,9 @@ public final class PlaybackService extends Service
 			if (outputFile.length() == 0L) {
 				stream.write(header.getBytes());
 			}
-			stream.write(data.getBytes());
+			if ((mState & FLAG_PLAYING) != 0) {
+				stream.write(data.getBytes());
+			}
 			stream.close();
 		} catch (IOException e) {
 			Log.w("audioscrobbler", e.getMessage(), e);
