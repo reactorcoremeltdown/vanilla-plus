@@ -1184,7 +1184,7 @@ public final class PlaybackService extends Service
 		File root = Environment.getExternalStorageDirectory();
 		File outDir = new File(root.getAbsolutePath() + File.separator + "audioscrobbler");
 		String fileName = "scrobbler.log";
-		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus"
+		String header = "#AUDIOSCROBBLER/1.1\n#TZ/UTC\n#CLIENT/VanillaPlus";
 		long unixTime = System.currentTimeMillis() / 1000L;
 		String data = song.artist + "\t" +
 			song.album + "\t" +
