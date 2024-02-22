@@ -71,7 +71,6 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
-import java.io.Writer;
 
 
 /**
@@ -1192,9 +1191,9 @@ public final class PlaybackService extends Service
 		String data = song.artist + "\t" +
 			song.album + "\t" +
 			song.title + "\t" +
-			song.trackNumber.toString() + "\t" +
-			song.duration.toString() + "\tL\t" +
-			unixTime.toString();
+			Integer.toString(song.trackNumber) + "\t" +
+			Long.toString(song.duration) + "\tL\t" +
+			Long.toString(unixTime);
 
 		if (!outDir.isDirectory()) {
 			outDir.mkdir();
