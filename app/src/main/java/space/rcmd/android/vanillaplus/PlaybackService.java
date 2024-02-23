@@ -1205,10 +1205,11 @@ public final class PlaybackService extends Service
 			}
 			File outputFile = new File(outDir, fileName);
 			FileOutputStream stream = new FileOutputStream(outputFile, true);
+			showToast("Current position: " + Long.toString(position), Toast.LENGTH_LONG);
 			if (outputFile.length() == 0L) {
 				stream.write(header.getBytes());
 			}
-			if (position < 5) {
+			if (position < 5L) {
 				stream.write(data.getBytes());
 			}
 			stream.close();
