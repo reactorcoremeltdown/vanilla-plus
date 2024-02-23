@@ -1208,10 +1208,8 @@ public final class PlaybackService extends Service
 			if (outputFile.length() == 0L) {
 				stream.write(header.getBytes());
 			}
-			if ((mState & FLAG_PLAYING) != 0) {
-				if (position < 5) {
-					stream.write(data.getBytes());
-				}
+			if (position < 5) {
+				stream.write(data.getBytes());
 			}
 			stream.close();
 		} catch (IOException e) {
