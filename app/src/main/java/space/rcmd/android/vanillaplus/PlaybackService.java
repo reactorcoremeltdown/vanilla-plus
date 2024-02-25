@@ -1205,6 +1205,7 @@ public final class PlaybackService extends Service
 					File outputFile = new File(outDir, fileName);
 					RandomAccessFile f = new RandomAccessFile(outputFile, "rw");
 					long length = f.length() - 1;
+					byte b = f.readByte();
 					do {
 						length -= 1;
 						f.seek(length);
