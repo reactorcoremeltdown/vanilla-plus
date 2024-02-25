@@ -66,6 +66,7 @@ import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.EOFException;
 import java.io.File;
+import java.io.RandomAccessFile;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Arrays;
@@ -1211,7 +1212,7 @@ public final class PlaybackService extends Service
 					} while(b != 10 && length > 0);
 					f.setLength(length+1);
 					f.close();
-					showToast("Song removed");
+					showToast("Song removed", Toast.LENGTH_SHORT);
 				}
 			default:
 				try {
@@ -1226,7 +1227,7 @@ public final class PlaybackService extends Service
 					}
 					if ((mState & FLAG_PLAYING) != 0) {
 						if (position < 5) {
-							showToast("Song scrobbled");
+							showToast("Song scrobbled", Toast.LENGTH_SHORT);
 							stream.write(data.getBytes());
 						}
 					}
