@@ -1167,7 +1167,7 @@ public final class PlaybackService extends Service
 				intent.putExtra("albumid", androidIds[1]);
 			}
 			sendBroadcast(intent);
-			scrobbleLog();
+			scrobbleLog("write");
 		}
 
 		if (mScrobble) {
@@ -1179,7 +1179,7 @@ public final class PlaybackService extends Service
 		}
 	}
 
-	private void scrobbleLog() {
+	private void scrobbleLog(String action) {
 		Context context = getApplicationContext();
 		Song song = mCurrentSong;
 		File root = context.getExternalFilesDir(null);
@@ -1198,25 +1198,42 @@ public final class PlaybackService extends Service
 		if (!outDir.isDirectory()) {
 			outDir.mkdir();
 		}
-		try {
-			if (!outDir.isDirectory()) {
-				throw new IOException(
-					"Unable to create directory audioscrobbler. Maybe the SD card is mounted?");
-			}
-			File outputFile = new File(outDir, fileName);
-			FileOutputStream stream = new FileOutputStream(outputFile, true);
-			//showToast("Current position: " + Long.toString(position), Toast.LENGTH_LONG);
-			if (outputFile.length() == 0L) {
-				stream.write(header.getBytes());
-			}
-			if ((mState & FLAG_PLAYING) != 0) {
-				if (position < 5) {
-					stream.write(data.getBytes());
+		switch(action) {
+			case "truncate":
+				if (position < 30) {
+					File outputFile = new File(outDir, fileName);
+					RandomAccessFile f = new RandomAccessFile(outputFile, "rw");
+					long length = f.length() - 1;
+					do {
+						length -= 1;
+						f.seek(length);
+						byte b = f.readByte();
+					} while(b != 10 && length > 0);
+					f.setLength(length+1);
+					f.close();
+					showToast("Song removed");
 				}
-			}
-			stream.close();
-		} catch (IOException e) {
-			Log.w("audioscrobbler", e.getMessage(), e);
+			default:
+				try {
+					if (!outDir.isDirectory()) {
+						throw new IOException(
+							"Unable to create directory audioscrobbler. Maybe the SD card is mounted?");
+					}
+					File outputFile = new File(outDir, fileName);
+					FileOutputStream stream = new FileOutputStream(outputFile, true);
+					if (outputFile.length() == 0L) {
+						stream.write(header.getBytes());
+					}
+					if ((mState & FLAG_PLAYING) != 0) {
+						if (position < 5) {
+							showToast("Song scrobbled");
+							stream.write(data.getBytes());
+						}
+					}
+					stream.close();
+				} catch (IOException e) {
+					Log.w("audioscrobbler", e.getMessage(), e);
+				}
 		}
 	}
 
@@ -2304,6 +2321,7 @@ public final class PlaybackService extends Service
 			Song song = shiftCurrentSong(SongTimeline.SHIFT_NEXT_SONG);
 			if (receiver != null)
 				receiver.setSong(song);
+				scrobbleLog("truncate");
 			break;
 		}
 		case PreviousSong: {
@@ -2316,6 +2334,7 @@ public final class PlaybackService extends Service
 			Song song = shiftCurrentSong(SongTimeline.SHIFT_NEXT_ALBUM);
 			if (receiver != null)
 				receiver.setSong(song);
+				scrobbleLog("truncate");
 			break;
 		}
 		case PreviousAlbum: {
