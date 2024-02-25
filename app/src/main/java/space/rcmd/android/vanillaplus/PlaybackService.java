@@ -1201,19 +1201,23 @@ public final class PlaybackService extends Service
 		}
 		switch(action) {
 			case "truncate":
-				if (position < 30) {
-					File outputFile = new File(outDir, fileName);
-					RandomAccessFile f = new RandomAccessFile(outputFile, "rw");
-					long length = f.length() - 1;
-					byte b = f.readByte();
-					do {
-						length -= 1;
-						f.seek(length);
-						b = f.readByte();
-					} while(b != 10 && length > 0);
-					f.setLength(length+1);
-					f.close();
-					showToast("Song removed", Toast.LENGTH_SHORT);
+				try {
+					if (position < 30) {
+						File outputFile = new File(outDir, fileName);
+						RandomAccessFile f = new RandomAccessFile(outputFile, "rw");
+						long length = f.length() - 1;
+						byte b = f.readByte();
+						do {
+							length -= 1;
+							f.seek(length);
+							b = f.readByte();
+						} while(b != 10 && length > 0);
+						f.setLength(length+1);
+						f.close();
+						showToast("Song removed", Toast.LENGTH_SHORT);
+					}
+				} catch (IOException e) {
+					Log.w("audioscrobbler", e.getMessage(), e);
 				}
 			default:
 				try {
