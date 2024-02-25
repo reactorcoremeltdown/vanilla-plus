@@ -1209,7 +1209,7 @@ public final class PlaybackService extends Service
 					do {
 						length -= 1;
 						f.seek(length);
-						byte b = f.readByte();
+						b = f.readByte();
 					} while(b != 10 && length > 0);
 					f.setLength(length+1);
 					f.close();
