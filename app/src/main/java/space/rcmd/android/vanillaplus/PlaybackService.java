@@ -1226,10 +1226,10 @@ public final class PlaybackService extends Service
 						f.close();
 						showToast("Song removed", Toast.LENGTH_SHORT);
 					}
-					lastTimestamp = unixTime;
 					if (position < 5) {
 						showToast("Song scrobbled", Toast.LENGTH_SHORT);
 						stream.write(data.getBytes());
+						lastTimestamp = unixTime;
 					}
 				}
 				stream.close();
